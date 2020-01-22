@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ElegantCamera</string>
+    <string name="textview">TextView</string>
+    <string name="system_take_photo">系统拍照</string>
+    <string name="custom_take_photo">自定义拍照</string>
+</resources>

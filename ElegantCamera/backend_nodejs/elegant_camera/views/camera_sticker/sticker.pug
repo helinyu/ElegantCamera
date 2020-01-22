@@ -1,0 +1,118 @@
+extends ../layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+    a(href='http://www.baidu.com') 百度  
+    a(class='button' href='http://www.baidu.com') 百度
+    a(class='button', href='http://www.baidu.com') 百度
+    
+    div
+    input(
+    type='checkbox'
+    name='agreement'
+    checked
+    )
+
+    input(data-json=`
+    {
+    "非常": "长的",
+    "数据": true
+    }
+    `)
+   
+
+    div(class='div-class', (click)='play()')
+
+    div(escaped="<code>")
+    div(unescaped!="<code>")
+
+
+    input(type='checkbox' checked)
+    input(type='checkbox' checked=true)
+    input(type='checkbox' checked=false)
+    input(type='checkbox' checked=true.toString())
+
+
+    doctype html
+    input(type='checkbox' checked)
+    input(type='checkbox' checked=true)
+    input(type='checkbox' checked=false)
+    input(type='checkbox' checked=true && 'checked')
+
+    a(style={color: 'red', background: 'green'} href="http://m.baidu.com") 百度
+
+    div() 你好
+
+    - var classes = ['foo', 'bar', 'baz']
+    a(class=classes)
+    a.bang(class=classes class=['bing'])
+
+    - var currentUrl = '/about'
+    a(class={active: currentUrl === '/'} href='/') Home
+    a(class={active: currentUrl === '/about'} href='/about') About
+
+    br
+    hr
+    a.button(href="http://m.baidu.com") 百度
+    .content
+    .title
+    .a
+    .name
+    div.whate 
+
+    div#foo(data-bar="foo")&attributes({'data-foo': 'bar'})
+
+    - var attributes = {};
+    - attributes.class = 'baz';
+    div#foo(data-bar="foo")&attributes(attributes)
+
+
+    - var list = ["Uno", "Dos", "Tres","Cuatro", "Cinco", "Seis"]
+    each item in list
+        li= item
+
+    p= '这个代码被 <转义> 了！'
+    p
+        != '这段文字 <strong>没有</strong> 被转义！'
+    //-  如何更改
+    p!= '这段文字' + ' <strong>没有</strong> 被转义！'
+
+    //-  
+        给模板写的注释
+        随便写多少字
+        都没关系。 块注释
+
+    //- - var user = { description: 'foo bar baz' }
+    - var user = {  }
+    - var authorised = true
+    #user
+    if user.description
+        h2.green 描述
+        p.description= user.description
+    else if authorised
+        h2.blue 描述
+        p.description.
+            用户没有添加描述。
+            不写点什么吗……
+    else
+        h2.red 描述
+        p.description 用户没有描述
+
+    unless user.isAnonymous
+        p 您已经以 #{user.name} 的身份登录。
+
+
+    img(src="", alt="", srcset="") 
+
+    div
+        .name="写你想写的内容"
+
+    script
+    :coffee-script
+        console.log 'This is coffee script'
+
+    p :markdown-it(inline) **加粗文字**
+
+

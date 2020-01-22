@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'ElegantCamera' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Masonry', '~> 1.1.0'
+  pod 'YYKit', '~> 1.0.9'
+  pod 'GPUImage', '~> 0.1.7'  
+  pod 'LookinServer', '~> 1.0.0'
+  pod 'CocoaLumberjack'
+  pod "ReactiveCocoa", "~> 2.5"
+  pod "Shimmer"
+  pod 'TZImagePickerController', '~> 3.2.7'
+  # Pods for ElegantCamera
+
+  target 'ElegantCameraTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ElegantCameraUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

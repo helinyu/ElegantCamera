@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 实现了线性布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_id0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="textView"
+        />
+
+
+<!--    <View-->
+<!--        android:id="@+id/hao_0"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="#F44336"-->
+
+<!--        />-->
+
+<!--    <View-->
+<!--        android:id="@+id/hao_1"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_below="@+id/hao_0"-->
+<!--        android:background="#00BCD4" />-->
+<!--    -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_below="@+id/hao_1"-->
+<!--        android:background="#3F51B5"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="15dp">-->
+<!--        <View-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#ff00ff"-->
+<!--            />-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#000"-->
+<!--            android:padding="15dp">-->
+
+<!--            <View-->
+<!--                android:id="@+id/r_inner_0"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#4CAF50" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/r_inner_1"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="7dp"-->
+<!--                android:layout_toRightOf="@id/r_inner_0"-->
+<!--                android:background="#8BC34A" />-->
+
+<!--        </RelativeLayout>-->
+
+
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/hao"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="#000000"-->
+<!--        android:paddingTop="20dp"-->
+<!--        android:paddingBottom="30dp"-->
+<!--        android:paddingLeft="50dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        android:layout_marginTop="0dp">-->
+
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#FFC107"/>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/hao1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="#03A9F4"-->
+<!--        >-->
+
+<!--        <View-->
+<!--            android:id="@+id/hao1_1"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="#673AB7"-->
+<!--            android:layout_weight="2">-->
+
+<!--        </View>-->
+
+<!--        <View-->
+<!--            android:id="@+id/hao1_2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:layout_weight="2">-->
+
+<!--        </View>-->
+
+<!--        <View-->
+<!--            android:id="@+id/hao1_3"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="#4CAF50"-->
+<!--            android:layout_weight="2">-->
+
+<!--        </View>-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

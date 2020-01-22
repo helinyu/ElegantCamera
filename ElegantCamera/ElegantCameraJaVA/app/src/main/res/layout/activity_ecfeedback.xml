@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback.ECFeedbackActivity"
+    android:orientation="vertical">
+    
+    <EditText
+        android:id="@+id/feedback_tv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#555050"
+        android:gravity="center_horizontal"
+        android:textAlignment="textStart"
+        />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#FFC107"
+        android:text="提 交"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:background="#AAA4A4"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

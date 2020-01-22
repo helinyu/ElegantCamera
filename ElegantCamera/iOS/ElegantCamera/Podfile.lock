@@ -1,0 +1,54 @@
+PODS:
+  - CocoaLumberjack (3.6.0):
+    - CocoaLumberjack/Core (= 3.6.0)
+  - CocoaLumberjack/Core (3.6.0)
+  - GPUImage (0.1.7)
+  - LookinServer (1.0.0)
+  - Masonry (1.1.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - Shimmer (1.0.2)
+  - TZImagePickerController (3.2.7)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - GPUImage (~> 0.1.7)
+  - LookinServer (~> 1.0.0)
+  - Masonry (~> 1.1.0)
+  - ReactiveCocoa (~> 2.5)
+  - Shimmer
+  - TZImagePickerController (~> 3.2.7)
+  - YYKit (~> 1.0.9)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - GPUImage
+    - LookinServer
+    - Masonry
+    - ReactiveCocoa
+    - Shimmer
+    - TZImagePickerController
+    - YYKit
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  TZImagePickerController: 821b81f83594a736e831a018f2a2ce31822ddf0b
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 83a008333c4ffa51aef6d0fc1e0d09a8419f8bdb
+
+COCOAPODS: 1.8.4

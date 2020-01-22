@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/to_feedback_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="到反馈页面"
+        android:textColor="#000"/>
+
+
+    <Button
+        android:id="@+id/to_take_photo_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="去拍照， 系统拍照"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"/>
+
+<!--    test image-->
+    <ImageView
+        android:id="@+id/sysytem_imgview0"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/to_take_photo_btn_file_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="系统拍照， 图片文件保存"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF9800"/>
+
+    <ImageView
+        android:id="@+id/sysytem_imgview"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="#CC0A0A"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/take_video_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="视频拍摄"
+        android:layout_marginTop="10dp"
+        android:textColor="#FF9800"/>
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#2196F3"
+        />
+
+
+
+</LinearLayout>

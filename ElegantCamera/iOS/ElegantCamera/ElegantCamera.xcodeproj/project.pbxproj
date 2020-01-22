@@ -1,0 +1,1505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41584D832375422B00191C37 /* ECPreviewRatioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D822375422B00191C37 /* ECPreviewRatioView.m */; };
+		41584D8A2375476A00191C37 /* WKBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D872375476900191C37 /* WKBaseView.m */; };
+		41584D8B2375476A00191C37 /* WKPopBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D892375476A00191C37 /* WKPopBaseView.m */; };
+		41584D8E2375478900191C37 /* NSObject+WKKeyboardIsShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D8D2375478900191C37 /* NSObject+WKKeyboardIsShow.m */; };
+		41584D97237547B900191C37 /* WSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D91237547B900191C37 /* WSProgressHUD.m */; };
+		41584D98237547B900191C37 /* WSIndefiniteAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D94237547B900191C37 /* WSIndefiniteAnimationView.m */; };
+		41584D99237547B900191C37 /* WSProgressBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41584D95237547B900191C37 /* WSProgressBundle.bundle */; };
+		41584D9A237547B900191C37 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D96237547B900191C37 /* MMMaterialDesignSpinner.m */; };
+		41584D9D2375491400191C37 /* WKViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D9B2375491400191C37 /* WKViewManager.m */; };
+		41584DA02375493D00191C37 /* AppDelegate+visableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584D9E2375493C00191C37 /* AppDelegate+visableVC.m */; };
+		41584DA623754AA400191C37 /* NSMutableArray+ECAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584DA523754AA400191C37 /* NSMutableArray+ECAdd.m */; };
+		41584DA92375535700191C37 /* ECIconDescControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584DA82375535700191C37 /* ECIconDescControl.m */; };
+		41584DAD23755C3A00191C37 /* ECCameraSettingsMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41584DAC23755C3A00191C37 /* ECCameraSettingsMoreView.m */; };
+		415CBD94236BD36100C4E006 /* ECOperationPannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415CBD93236BD36100C4E006 /* ECOperationPannelView.m */; };
+		415CBD97236BD37400C4E006 /* ECCameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415CBD96236BD37400C4E006 /* ECCameraPreviewView.m */; };
+		415CBD9D236BD3C500C4E006 /* ECCameraSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415CBD9C236BD3C500C4E006 /* ECCameraSettingsView.m */; };
+		415D83FF236FC84D002F2DBB /* ECBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D83FE236FC84D002F2DBB /* ECBaseNavViewController.m */; };
+		415D8403236FCC0A002F2DBB /* ECMediaTakenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8402236FCC0A002F2DBB /* ECMediaTakenView.m */; };
+		415D8407236FCE36002F2DBB /* ECHotTakenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8406236FCE36002F2DBB /* ECHotTakenView.m */; };
+		415D840A236FCEB2002F2DBB /* ECTakenPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8409236FCEB2002F2DBB /* ECTakenPhotoView.m */; };
+		415D840D236FCEC0002F2DBB /* ECTakenVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D840C236FCEC0002F2DBB /* ECTakenVideoView.m */; };
+		415D8410236FCED1002F2DBB /* ECTakenEmoctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D840F236FCED1002F2DBB /* ECTakenEmoctionView.m */; };
+		415D8415236FD1F1002F2DBB /* UIView+ECAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D8414236FD1F1002F2DBB /* UIView+ECAdd.m */; };
+		415D841E2370006A002F2DBB /* NSMutableDictionary+ECAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D841D2370006A002F2DBB /* NSMutableDictionary+ECAdd.m */; };
+		415D842223701BED002F2DBB /* ECGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D842123701BED002F2DBB /* ECGradientView.m */; };
+		415D842923702496002F2DBB /* ECTakenManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D842823702495002F2DBB /* ECTakenManger.m */; };
+		41795456237C25DF00AEC529 /* ECSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41795455237C25DF00AEC529 /* ECSettingsModel.m */; };
+		4179545C237C362000AEC529 /* ECWaterMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4179545B237C362000AEC529 /* ECWaterMarkViewController.m */; };
+		419177FD237981200081FD8B /* ECBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 419177FC237981200081FD8B /* ECBaseView.m */; };
+		41917801237988E90081FD8B /* ECSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41917800237988E90081FD8B /* ECSettingsViewController.m */; };
+		41917807237989B70081FD8B /* ECBaseTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 41917806237989B70081FD8B /* ECBaseTV.m */; };
+		4191780A237989CF0081FD8B /* ECBaseCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 41917809237989CF0081FD8B /* ECBaseCV.m */; };
+		41DE8F46237C3724005F2D07 /* ECFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F45237C3724005F2D07 /* ECFeedbackViewController.m */; };
+		41DE8F49237C3752005F2D07 /* ECPrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F48237C3752005F2D07 /* ECPrivacyPolicyViewController.m */; };
+		41DE8F4F237C3790005F2D07 /* ECUserAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F4E237C3790005F2D07 /* ECUserAgreementViewController.m */; };
+		41DE8F52237C397B005F2D07 /* UIApplication+ECAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F51237C397B005F2D07 /* UIApplication+ECAdd.m */; };
+		41DE8F57237C3BE2005F2D07 /* ECWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F56237C3BE2005F2D07 /* ECWebViewViewController.m */; };
+		41DE8F5D237D31D2005F2D07 /* ECBaseCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F5C237D31D2005F2D07 /* ECBaseCCell.m */; };
+		41DE8FBF237D79B1005F2D07 /* XPixelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F62237D79B1005F2D07 /* XPixelItem.m */; };
+		41DE8FC0237D79B1005F2D07 /* XScratchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F66237D79B1005F2D07 /* XScratchView.m */; };
+		41DE8FC1237D79B1005F2D07 /* XRGBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F67237D79B1005F2D07 /* XRGBTool.m */; };
+		41DE8FC2237D79B1005F2D07 /* WBGImageEditorGestureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F68237D79B1005F2D07 /* WBGImageEditorGestureManager.m */; };
+		41DE8FC3237D79B1005F2D07 /* WBGMoreKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F69237D79B1005F2D07 /* WBGMoreKeyboard.m */; };
+		41DE8FC4237D79B1005F2D07 /* WBGTextToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F6F237D79B1005F2D07 /* WBGTextToolView.m */; };
+		41DE8FC5237D79B1005F2D07 /* WBGMosicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F72237D79B1005F2D07 /* WBGMosicaViewController.m */; };
+		41DE8FC7237D79B1005F2D07 /* WBGImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F74237D79B1005F2D07 /* WBGImageToolBase.m */; };
+		41DE8FC9237D79B1005F2D07 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F83237D79B1005F2D07 /* TOActivityCroppedImageProvider.m */; };
+		41DE8FCA237D79B1005F2D07 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F84237D79B1005F2D07 /* UIImage+CropRotate.m */; };
+		41DE8FCB237D79B1005F2D07 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F85237D79B1005F2D07 /* TOCropViewControllerTransitioning.m */; };
+		41DE8FCC237D79B1005F2D07 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F86237D79B1005F2D07 /* TOCroppedImageAttributes.m */; };
+		41DE8FCD237D79B2005F2D07 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F8B237D79B1005F2D07 /* TOCropViewController.m */; };
+		41DE8FCE237D79B2005F2D07 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F9C237D79B1005F2D07 /* TOCropScrollView.m */; };
+		41DE8FCF237D79B2005F2D07 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F9D237D79B1005F2D07 /* TOCropView.m */; };
+		41DE8FD0237D79B2005F2D07 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F9E237D79B1005F2D07 /* TOCropOverlayView.m */; };
+		41DE8FD1237D79B2005F2D07 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8F9F237D79B1005F2D07 /* TOCropToolbar.m */; };
+		41DE8FD2237D79B2005F2D07 /* UIImage+library.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FA0237D79B1005F2D07 /* UIImage+library.m */; };
+		41DE8FD3237D79B2005F2D07 /* WBGMoreKeyboardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FA8237D79B1005F2D07 /* WBGMoreKeyboardItem.m */; };
+		41DE8FD4237D79B2005F2D07 /* WBGMoreKeyboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FA9237D79B1005F2D07 /* WBGMoreKeyboardCell.m */; };
+		41DE8FD5237D79B2005F2D07 /* WBGTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FAA237D79B1005F2D07 /* WBGTextTool.m */; };
+		41DE8FD6237D79B2005F2D07 /* WBGImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FAB237D79B1005F2D07 /* WBGImageEditorViewController.m */; };
+		41DE8FD7237D79B2005F2D07 /* WBGMoreKeyboard+CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FAD237D79B1005F2D07 /* WBGMoreKeyboard+CollectionView.m */; };
+		41DE8FD8237D79B2005F2D07 /* ColorfullButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FB1237D79B1005F2D07 /* ColorfullButton.m */; };
+		41DE8FD9237D79B2005F2D07 /* UIColor+TLChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FB2237D79B1005F2D07 /* UIColor+TLChat.m */; };
+		41DE8FDA237D79B2005F2D07 /* WBGDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FB4237D79B1005F2D07 /* WBGDrawTool.m */; };
+		41DE8FDB237D79B2005F2D07 /* WBGImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FB5237D79B1005F2D07 /* WBGImageEditor.m */; };
+		41DE8FDC237D79B2005F2D07 /* WBGBaseKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE8FB6237D79B1005F2D07 /* WBGBaseKeyboard.m */; };
+		41DE8FDD237D79B2005F2D07 /* WBGImageEditorViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41DE8FB8237D79B1005F2D07 /* WBGImageEditorViewController.strings */; };
+		41DE8FDE237D79B2005F2D07 /* EditImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DE8FBB237D79B1005F2D07 /* EditImage.xcassets */; };
+		41DE8FDF237D79B2005F2D07 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 41DE8FBC237D79B1005F2D07 /* .gitkeep */; };
+		41DE8FE0237D79B2005F2D07 /* WBGImageEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41DE8FBD237D79B1005F2D07 /* WBGImageEditorViewController.xib */; };
+		41E17421236AF66900E6AA36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17420236AF66900E6AA36 /* AppDelegate.m */; };
+		41E17424236AF66900E6AA36 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17423236AF66900E6AA36 /* SceneDelegate.m */; };
+		41E1742C236AF66C00E6AA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E1742B236AF66C00E6AA36 /* Assets.xcassets */; };
+		41E1742F236AF66C00E6AA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E1742D236AF66C00E6AA36 /* LaunchScreen.storyboard */; };
+		41E17432236AF66C00E6AA36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17431236AF66C00E6AA36 /* main.m */; };
+		41E1743C236AF66C00E6AA36 /* ElegantCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E1743B236AF66C00E6AA36 /* ElegantCameraTests.m */; };
+		41E17447236AF66C00E6AA36 /* ElegantCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17446236AF66C00E6AA36 /* ElegantCameraUITests.m */; };
+		41E17459236BC71A00E6AA36 /* ECBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17458236BC71A00E6AA36 /* ECBaseViewController.m */; };
+		41E1745F236BC8B000E6AA36 /* ECMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E1745E236BC8AF00E6AA36 /* ECMainViewController.m */; };
+		41E17462236BC93700E6AA36 /* ECMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17461236BC93700E6AA36 /* ECMainView.m */; };
+		41E96AAD237ADFCD004DD031 /* ECBaseTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E96AAC237ADFCD004DD031 /* ECBaseTCell.m */; };
+		41E96AB0237AE012004DD031 /* ECSettingsCircleSelectTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E96AAF237AE012004DD031 /* ECSettingsCircleSelectTCell.m */; };
+		41E96AB3237AE10F004DD031 /* ECSettingsSwitchTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E96AB2237AE10F004DD031 /* ECSettingsSwitchTCell.m */; };
+		41E96AB6237AE1A4004DD031 /* ECSettingsBaseTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E96AB5237AE1A4004DD031 /* ECSettingsBaseTCell.m */; };
+		41E96AB9237AE1E5004DD031 /* ECSettingsRightArrowTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E96AB8237AE1E5004DD031 /* ECSettingsRightArrowTCell.m */; };
+		41E96ABC237AE245004DD031 /* ECSettingsTextTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E96ABB237AE245004DD031 /* ECSettingsTextTCell.m */; };
+		42DF6CE636D120E82F683734 /* Pods_ElegantCameraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AB16A52DCFB8A264564977 /* Pods_ElegantCameraTests.framework */; };
+		DACD714F0BF8A903CF94E3E4 /* Pods_ElegantCameraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DA222A6ED7594C5D0DC180 /* Pods_ElegantCameraUITests.framework */; };
+		FD501A1E859F9592F87D8F18 /* Pods_ElegantCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C635B9BA17BFD410A698A4B0 /* Pods_ElegantCamera.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41E17438236AF66C00E6AA36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E17414236AF66900E6AA36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E1741B236AF66900E6AA36;
+			remoteInfo = ElegantCamera;
+		};
+		41E17443236AF66C00E6AA36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E17414236AF66900E6AA36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E1741B236AF66900E6AA36;
+			remoteInfo = ElegantCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06DA222A6ED7594C5D0DC180 /* Pods_ElegantCameraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantCameraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		116988AD4658FCEC4314B853 /* Pods-ElegantCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCameraUITests.release.xcconfig"; path = "Target Support Files/Pods-ElegantCameraUITests/Pods-ElegantCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		33AB16A52DCFB8A264564977 /* Pods_ElegantCameraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantCameraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41584D812375422B00191C37 /* ECPreviewRatioView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECPreviewRatioView.h; sourceTree = "<group>"; };
+		41584D822375422B00191C37 /* ECPreviewRatioView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECPreviewRatioView.m; sourceTree = "<group>"; };
+		41584D862375476900191C37 /* WKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBaseView.h; sourceTree = "<group>"; };
+		41584D872375476900191C37 /* WKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseView.m; sourceTree = "<group>"; };
+		41584D882375476A00191C37 /* WKPopBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPopBaseView.h; sourceTree = "<group>"; };
+		41584D892375476A00191C37 /* WKPopBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPopBaseView.m; sourceTree = "<group>"; };
+		41584D8C2375478900191C37 /* NSObject+WKKeyboardIsShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WKKeyboardIsShow.h"; sourceTree = "<group>"; };
+		41584D8D2375478900191C37 /* NSObject+WKKeyboardIsShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WKKeyboardIsShow.m"; sourceTree = "<group>"; };
+		41584D90237547B900191C37 /* WSIndefiniteAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSIndefiniteAnimationView.h; sourceTree = "<group>"; };
+		41584D91237547B900191C37 /* WSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSProgressHUD.m; sourceTree = "<group>"; };
+		41584D92237547B900191C37 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		41584D93237547B900191C37 /* WSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSProgressHUD.h; sourceTree = "<group>"; };
+		41584D94237547B900191C37 /* WSIndefiniteAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSIndefiniteAnimationView.m; sourceTree = "<group>"; };
+		41584D95237547B900191C37 /* WSProgressBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WSProgressBundle.bundle; sourceTree = "<group>"; };
+		41584D96237547B900191C37 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		41584D9B2375491400191C37 /* WKViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKViewManager.m; sourceTree = "<group>"; };
+		41584D9C2375491400191C37 /* WKViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKViewManager.h; sourceTree = "<group>"; };
+		41584D9E2375493C00191C37 /* AppDelegate+visableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+visableVC.m"; sourceTree = "<group>"; };
+		41584D9F2375493C00191C37 /* AppDelegate+visableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+visableVC.h"; sourceTree = "<group>"; };
+		41584DA423754AA400191C37 /* NSMutableArray+ECAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ECAdd.h"; sourceTree = "<group>"; };
+		41584DA523754AA400191C37 /* NSMutableArray+ECAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ECAdd.m"; sourceTree = "<group>"; };
+		41584DA72375535700191C37 /* ECIconDescControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECIconDescControl.h; sourceTree = "<group>"; };
+		41584DA82375535700191C37 /* ECIconDescControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECIconDescControl.m; sourceTree = "<group>"; };
+		41584DAB23755C3A00191C37 /* ECCameraSettingsMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECCameraSettingsMoreView.h; sourceTree = "<group>"; };
+		41584DAC23755C3A00191C37 /* ECCameraSettingsMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECCameraSettingsMoreView.m; sourceTree = "<group>"; };
+		415CBD92236BD36100C4E006 /* ECOperationPannelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECOperationPannelView.h; sourceTree = "<group>"; };
+		415CBD93236BD36100C4E006 /* ECOperationPannelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECOperationPannelView.m; sourceTree = "<group>"; };
+		415CBD95236BD37400C4E006 /* ECCameraPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECCameraPreviewView.h; sourceTree = "<group>"; };
+		415CBD96236BD37400C4E006 /* ECCameraPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECCameraPreviewView.m; sourceTree = "<group>"; };
+		415CBD9B236BD3C500C4E006 /* ECCameraSettingsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECCameraSettingsView.h; sourceTree = "<group>"; };
+		415CBD9C236BD3C500C4E006 /* ECCameraSettingsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECCameraSettingsView.m; sourceTree = "<group>"; };
+		415D83FC236FC43B002F2DBB /* ECMacroPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECMacroPrefixHeader.pch; sourceTree = "<group>"; };
+		415D83FD236FC84D002F2DBB /* ECBaseNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseNavViewController.h; sourceTree = "<group>"; };
+		415D83FE236FC84D002F2DBB /* ECBaseNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseNavViewController.m; sourceTree = "<group>"; };
+		415D8401236FCC0A002F2DBB /* ECMediaTakenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECMediaTakenView.h; sourceTree = "<group>"; };
+		415D8402236FCC0A002F2DBB /* ECMediaTakenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECMediaTakenView.m; sourceTree = "<group>"; };
+		415D8405236FCE36002F2DBB /* ECHotTakenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECHotTakenView.h; sourceTree = "<group>"; };
+		415D8406236FCE36002F2DBB /* ECHotTakenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECHotTakenView.m; sourceTree = "<group>"; };
+		415D8408236FCEB2002F2DBB /* ECTakenPhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECTakenPhotoView.h; sourceTree = "<group>"; };
+		415D8409236FCEB2002F2DBB /* ECTakenPhotoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECTakenPhotoView.m; sourceTree = "<group>"; };
+		415D840B236FCEC0002F2DBB /* ECTakenVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECTakenVideoView.h; sourceTree = "<group>"; };
+		415D840C236FCEC0002F2DBB /* ECTakenVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECTakenVideoView.m; sourceTree = "<group>"; };
+		415D840E236FCED1002F2DBB /* ECTakenEmoctionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECTakenEmoctionView.h; sourceTree = "<group>"; };
+		415D840F236FCED1002F2DBB /* ECTakenEmoctionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECTakenEmoctionView.m; sourceTree = "<group>"; };
+		415D8413236FD1F1002F2DBB /* UIView+ECAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ECAdd.h"; sourceTree = "<group>"; };
+		415D8414236FD1F1002F2DBB /* UIView+ECAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ECAdd.m"; sourceTree = "<group>"; };
+		415D8416236FD245002F2DBB /* ECTakenViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECTakenViewHeader.h; sourceTree = "<group>"; };
+		415D8417236FD4E4002F2DBB /* ColorMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMacroDefine.h; sourceTree = "<group>"; };
+		415D841C2370006A002F2DBB /* NSMutableDictionary+ECAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ECAdd.h"; sourceTree = "<group>"; };
+		415D841D2370006A002F2DBB /* NSMutableDictionary+ECAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ECAdd.m"; sourceTree = "<group>"; };
+		415D841F23700B71002F2DBB /* XN_CTViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XN_CTViewConstants.h; sourceTree = "<group>"; };
+		415D842023701BED002F2DBB /* ECGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGradientView.h; sourceTree = "<group>"; };
+		415D842123701BED002F2DBB /* ECGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGradientView.m; sourceTree = "<group>"; };
+		415D842523702046002F2DBB /* ECActionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECActionProtocol.h; sourceTree = "<group>"; };
+		415D842723702495002F2DBB /* ECTakenManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECTakenManger.h; sourceTree = "<group>"; };
+		415D842823702495002F2DBB /* ECTakenManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECTakenManger.m; sourceTree = "<group>"; };
+		415D842A23702510002F2DBB /* XNCommonBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNCommonBlock.h; sourceTree = "<group>"; };
+		41795454237C25DF00AEC529 /* ECSettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSettingsModel.h; sourceTree = "<group>"; };
+		41795455237C25DF00AEC529 /* ECSettingsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSettingsModel.m; sourceTree = "<group>"; };
+		4179545A237C362000AEC529 /* ECWaterMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECWaterMarkViewController.h; sourceTree = "<group>"; };
+		4179545B237C362000AEC529 /* ECWaterMarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECWaterMarkViewController.m; sourceTree = "<group>"; };
+		419177FB237981200081FD8B /* ECBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseView.h; sourceTree = "<group>"; };
+		419177FC237981200081FD8B /* ECBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseView.m; sourceTree = "<group>"; };
+		419177FF237988E90081FD8B /* ECSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSettingsViewController.h; sourceTree = "<group>"; };
+		41917800237988E90081FD8B /* ECSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSettingsViewController.m; sourceTree = "<group>"; };
+		41917805237989B70081FD8B /* ECBaseTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseTV.h; sourceTree = "<group>"; };
+		41917806237989B70081FD8B /* ECBaseTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseTV.m; sourceTree = "<group>"; };
+		41917808237989CF0081FD8B /* ECBaseCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseCV.h; sourceTree = "<group>"; };
+		41917809237989CF0081FD8B /* ECBaseCV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseCV.m; sourceTree = "<group>"; };
+		41DE8F44237C3724005F2D07 /* ECFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECFeedbackViewController.h; sourceTree = "<group>"; };
+		41DE8F45237C3724005F2D07 /* ECFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECFeedbackViewController.m; sourceTree = "<group>"; };
+		41DE8F47237C3752005F2D07 /* ECPrivacyPolicyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECPrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		41DE8F48237C3752005F2D07 /* ECPrivacyPolicyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECPrivacyPolicyViewController.m; sourceTree = "<group>"; };
+		41DE8F4D237C3790005F2D07 /* ECUserAgreementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECUserAgreementViewController.h; sourceTree = "<group>"; };
+		41DE8F4E237C3790005F2D07 /* ECUserAgreementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECUserAgreementViewController.m; sourceTree = "<group>"; };
+		41DE8F50237C397B005F2D07 /* UIApplication+ECAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ECAdd.h"; sourceTree = "<group>"; };
+		41DE8F51237C397B005F2D07 /* UIApplication+ECAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ECAdd.m"; sourceTree = "<group>"; };
+		41DE8F53237C39DC005F2D07 /* ECCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECCategory.h; sourceTree = "<group>"; };
+		41DE8F55237C3BE2005F2D07 /* ECWebViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECWebViewViewController.h; sourceTree = "<group>"; };
+		41DE8F56237C3BE2005F2D07 /* ECWebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECWebViewViewController.m; sourceTree = "<group>"; };
+		41DE8F5B237D31D2005F2D07 /* ECBaseCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseCCell.h; sourceTree = "<group>"; };
+		41DE8F5C237D31D2005F2D07 /* ECBaseCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseCCell.m; sourceTree = "<group>"; };
+		41DE8F62237D79B1005F2D07 /* XPixelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPixelItem.m; sourceTree = "<group>"; };
+		41DE8F63237D79B1005F2D07 /* XScratchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XScratchView.h; sourceTree = "<group>"; };
+		41DE8F64237D79B1005F2D07 /* XRGBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRGBTool.h; sourceTree = "<group>"; };
+		41DE8F65237D79B1005F2D07 /* XPixelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPixelItem.h; sourceTree = "<group>"; };
+		41DE8F66237D79B1005F2D07 /* XScratchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XScratchView.m; sourceTree = "<group>"; };
+		41DE8F67237D79B1005F2D07 /* XRGBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRGBTool.m; sourceTree = "<group>"; };
+		41DE8F68237D79B1005F2D07 /* WBGImageEditorGestureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGImageEditorGestureManager.m; sourceTree = "<group>"; };
+		41DE8F69237D79B1005F2D07 /* WBGMoreKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGMoreKeyboard.m; sourceTree = "<group>"; };
+		41DE8F6A237D79B1005F2D07 /* WBGMoreKeyboard+CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBGMoreKeyboard+CollectionView.h"; sourceTree = "<group>"; };
+		41DE8F6B237D79B1005F2D07 /* WBGImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGImageEditorViewController.h; sourceTree = "<group>"; };
+		41DE8F6C237D79B1005F2D07 /* WBGTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGTextTool.h; sourceTree = "<group>"; };
+		41DE8F6D237D79B1005F2D07 /* WBGMoreKeyboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGMoreKeyboardCell.h; sourceTree = "<group>"; };
+		41DE8F6E237D79B1005F2D07 /* WBGMoreKeyboardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGMoreKeyboardItem.h; sourceTree = "<group>"; };
+		41DE8F6F237D79B1005F2D07 /* WBGTextToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGTextToolView.m; sourceTree = "<group>"; };
+		41DE8F70237D79B1005F2D07 /* UIColor+TLChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TLChat.h"; sourceTree = "<group>"; };
+		41DE8F71237D79B1005F2D07 /* ColorfullButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfullButton.h; sourceTree = "<group>"; };
+		41DE8F72237D79B1005F2D07 /* WBGMosicaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGMosicaViewController.m; sourceTree = "<group>"; };
+		41DE8F74237D79B1005F2D07 /* WBGImageToolBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGImageToolBase.m; sourceTree = "<group>"; };
+		41DE8F75237D79B1005F2D07 /* WBGBaseKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGBaseKeyboard.h; sourceTree = "<group>"; };
+		41DE8F76237D79B1005F2D07 /* WBGImageEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGImageEditor.h; sourceTree = "<group>"; };
+		41DE8F83237D79B1005F2D07 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
+		41DE8F84237D79B1005F2D07 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		41DE8F85237D79B1005F2D07 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
+		41DE8F86237D79B1005F2D07 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCroppedImageAttributes.m; sourceTree = "<group>"; };
+		41DE8F87237D79B1005F2D07 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
+		41DE8F88237D79B1005F2D07 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
+		41DE8F89237D79B1005F2D07 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		41DE8F8A237D79B1005F2D07 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCroppedImageAttributes.h; sourceTree = "<group>"; };
+		41DE8F8B237D79B1005F2D07 /* TOCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropViewController.m; sourceTree = "<group>"; };
+		41DE8F90237D79B1005F2D07 /* TOCropViewController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		41DE8F98237D79B1005F2D07 /* TOCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropView.h; sourceTree = "<group>"; };
+		41DE8F99237D79B1005F2D07 /* TOCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropOverlayView.h; sourceTree = "<group>"; };
+		41DE8F9A237D79B1005F2D07 /* UIImage+library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+library.h"; sourceTree = "<group>"; };
+		41DE8F9B237D79B1005F2D07 /* TOCropToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropToolbar.h; sourceTree = "<group>"; };
+		41DE8F9C237D79B1005F2D07 /* TOCropScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropScrollView.m; sourceTree = "<group>"; };
+		41DE8F9D237D79B1005F2D07 /* TOCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropView.m; sourceTree = "<group>"; };
+		41DE8F9E237D79B1005F2D07 /* TOCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropOverlayView.m; sourceTree = "<group>"; };
+		41DE8F9F237D79B1005F2D07 /* TOCropToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropToolbar.m; sourceTree = "<group>"; };
+		41DE8FA0237D79B1005F2D07 /* UIImage+library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+library.m"; sourceTree = "<group>"; };
+		41DE8FA1237D79B1005F2D07 /* TOCropScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropScrollView.h; sourceTree = "<group>"; };
+		41DE8FA2237D79B1005F2D07 /* TOCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewController.h; sourceTree = "<group>"; };
+		41DE8FA3237D79B1005F2D07 /* WBGDrawTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGDrawTool.h; sourceTree = "<group>"; };
+		41DE8FA4237D79B1005F2D07 /* WBGMoreKeyboardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGMoreKeyboardDelegate.h; sourceTree = "<group>"; };
+		41DE8FA5237D79B1005F2D07 /* WBGImageEditorGestureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGImageEditorGestureManager.h; sourceTree = "<group>"; };
+		41DE8FA6237D79B1005F2D07 /* WBGKeyboardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGKeyboardDelegate.h; sourceTree = "<group>"; };
+		41DE8FA7237D79B1005F2D07 /* WBGKeyboardProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGKeyboardProtocol.h; sourceTree = "<group>"; };
+		41DE8FA8237D79B1005F2D07 /* WBGMoreKeyboardItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGMoreKeyboardItem.m; sourceTree = "<group>"; };
+		41DE8FA9237D79B1005F2D07 /* WBGMoreKeyboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGMoreKeyboardCell.m; sourceTree = "<group>"; };
+		41DE8FAA237D79B1005F2D07 /* WBGTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGTextTool.m; sourceTree = "<group>"; };
+		41DE8FAB237D79B1005F2D07 /* WBGImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGImageEditorViewController.m; sourceTree = "<group>"; };
+		41DE8FAC237D79B1005F2D07 /* WBGMoreKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGMoreKeyboard.h; sourceTree = "<group>"; };
+		41DE8FAD237D79B1005F2D07 /* WBGMoreKeyboard+CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBGMoreKeyboard+CollectionView.m"; sourceTree = "<group>"; };
+		41DE8FAE237D79B1005F2D07 /* WBGImageToolBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGImageToolBase.h; sourceTree = "<group>"; };
+		41DE8FAF237D79B1005F2D07 /* WBGMosicaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGMosicaViewController.h; sourceTree = "<group>"; };
+		41DE8FB0237D79B1005F2D07 /* WBGChatMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGChatMacros.h; sourceTree = "<group>"; };
+		41DE8FB1237D79B1005F2D07 /* ColorfullButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfullButton.m; sourceTree = "<group>"; };
+		41DE8FB2237D79B1005F2D07 /* UIColor+TLChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TLChat.m"; sourceTree = "<group>"; };
+		41DE8FB3237D79B1005F2D07 /* WBGTextToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGTextToolView.h; sourceTree = "<group>"; };
+		41DE8FB4237D79B1005F2D07 /* WBGDrawTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGDrawTool.m; sourceTree = "<group>"; };
+		41DE8FB5237D79B1005F2D07 /* WBGImageEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGImageEditor.m; sourceTree = "<group>"; };
+		41DE8FB6237D79B1005F2D07 /* WBGBaseKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGBaseKeyboard.m; sourceTree = "<group>"; };
+		41DE8FB9237D79B1005F2D07 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/WBGImageEditorViewController.strings"; sourceTree = "<group>"; };
+		41DE8FBA237D79B1005F2D07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/WBGImageEditorViewController.strings; sourceTree = "<group>"; };
+		41DE8FBB237D79B1005F2D07 /* EditImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EditImage.xcassets; sourceTree = "<group>"; };
+		41DE8FBC237D79B1005F2D07 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		41DE8FBE237D79B1005F2D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WBGImageEditorViewController.xib; sourceTree = "<group>"; };
+		41E1741C236AF66900E6AA36 /* ElegantCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElegantCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E1741F236AF66900E6AA36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41E17420236AF66900E6AA36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41E17422236AF66900E6AA36 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		41E17423236AF66900E6AA36 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		41E17425236AF66900E6AA36 /* ECMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECMainViewController.h; sourceTree = "<group>"; };
+		41E1742B236AF66C00E6AA36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41E1742E236AF66C00E6AA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41E17430236AF66C00E6AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E17431236AF66C00E6AA36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41E17437236AF66C00E6AA36 /* ElegantCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElegantCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E1743B236AF66C00E6AA36 /* ElegantCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElegantCameraTests.m; sourceTree = "<group>"; };
+		41E1743D236AF66C00E6AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E17442236AF66C00E6AA36 /* ElegantCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElegantCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E17446236AF66C00E6AA36 /* ElegantCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElegantCameraUITests.m; sourceTree = "<group>"; };
+		41E17448236AF66C00E6AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E17454236AF69200E6AA36 /* ElegantCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElegantCamera.entitlements; sourceTree = "<group>"; };
+		41E17457236BC71A00E6AA36 /* ECBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseViewController.h; sourceTree = "<group>"; };
+		41E17458236BC71A00E6AA36 /* ECBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseViewController.m; sourceTree = "<group>"; };
+		41E1745E236BC8AF00E6AA36 /* ECMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECMainViewController.m; sourceTree = "<group>"; };
+		41E17460236BC93700E6AA36 /* ECMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECMainView.h; sourceTree = "<group>"; };
+		41E17461236BC93700E6AA36 /* ECMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECMainView.m; sourceTree = "<group>"; };
+		41E96AAB237ADFCD004DD031 /* ECBaseTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseTCell.h; sourceTree = "<group>"; };
+		41E96AAC237ADFCD004DD031 /* ECBaseTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseTCell.m; sourceTree = "<group>"; };
+		41E96AAE237AE012004DD031 /* ECSettingsCircleSelectTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSettingsCircleSelectTCell.h; sourceTree = "<group>"; };
+		41E96AAF237AE012004DD031 /* ECSettingsCircleSelectTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSettingsCircleSelectTCell.m; sourceTree = "<group>"; };
+		41E96AB1237AE10F004DD031 /* ECSettingsSwitchTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSettingsSwitchTCell.h; sourceTree = "<group>"; };
+		41E96AB2237AE10F004DD031 /* ECSettingsSwitchTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSettingsSwitchTCell.m; sourceTree = "<group>"; };
+		41E96AB4237AE1A4004DD031 /* ECSettingsBaseTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSettingsBaseTCell.h; sourceTree = "<group>"; };
+		41E96AB5237AE1A4004DD031 /* ECSettingsBaseTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSettingsBaseTCell.m; sourceTree = "<group>"; };
+		41E96AB7237AE1E5004DD031 /* ECSettingsRightArrowTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSettingsRightArrowTCell.h; sourceTree = "<group>"; };
+		41E96AB8237AE1E5004DD031 /* ECSettingsRightArrowTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSettingsRightArrowTCell.m; sourceTree = "<group>"; };
+		41E96ABA237AE245004DD031 /* ECSettingsTextTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSettingsTextTCell.h; sourceTree = "<group>"; };
+		41E96ABB237AE245004DD031 /* ECSettingsTextTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSettingsTextTCell.m; sourceTree = "<group>"; };
+		C5AC82C59CD17455D9651E90 /* Pods-ElegantCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCameraUITests.debug.xcconfig"; path = "Target Support Files/Pods-ElegantCameraUITests/Pods-ElegantCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C635B9BA17BFD410A698A4B0 /* Pods_ElegantCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9401CBD6E4EACED812083DA /* Pods-ElegantCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCamera.debug.xcconfig"; path = "Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		D16B9E0D16AD4B1E5FCB8598 /* Pods-ElegantCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCameraTests.debug.xcconfig"; path = "Target Support Files/Pods-ElegantCameraTests/Pods-ElegantCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3261DE4D208C06805F70B09 /* Pods-ElegantCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCamera.release.xcconfig"; path = "Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera.release.xcconfig"; sourceTree = "<group>"; };
+		F37F95393E7A03B7471E74AF /* Pods-ElegantCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCameraTests.release.xcconfig"; path = "Target Support Files/Pods-ElegantCameraTests/Pods-ElegantCameraTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41E17419236AF66900E6AA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD501A1E859F9592F87D8F18 /* Pods_ElegantCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E17434236AF66C00E6AA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DF6CE636D120E82F683734 /* Pods_ElegantCameraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E1743F236AF66C00E6AA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACD714F0BF8A903CF94E3E4 /* Pods_ElegantCameraUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3078B183B979E7A2C54B2D40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C635B9BA17BFD410A698A4B0 /* Pods_ElegantCamera.framework */,
+				33AB16A52DCFB8A264564977 /* Pods_ElegantCameraTests.framework */,
+				06DA222A6ED7594C5D0DC180 /* Pods_ElegantCameraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41584D842375474F00191C37 /* Popview */ = {
+			isa = PBXGroup;
+			children = (
+				41584D8C2375478900191C37 /* NSObject+WKKeyboardIsShow.h */,
+				41584D8D2375478900191C37 /* NSObject+WKKeyboardIsShow.m */,
+				41584D862375476900191C37 /* WKBaseView.h */,
+				41584D872375476900191C37 /* WKBaseView.m */,
+				41584D882375476A00191C37 /* WKPopBaseView.h */,
+				41584D892375476A00191C37 /* WKPopBaseView.m */,
+				41584D9C2375491400191C37 /* WKViewManager.h */,
+				41584D9B2375491400191C37 /* WKViewManager.m */,
+				41584D9F2375493C00191C37 /* AppDelegate+visableVC.h */,
+				41584D9E2375493C00191C37 /* AppDelegate+visableVC.m */,
+			);
+			path = Popview;
+			sourceTree = "<group>";
+		};
+		41584D852375475400191C37 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				415D842023701BED002F2DBB /* ECGradientView.h */,
+				415D842123701BED002F2DBB /* ECGradientView.m */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		41584D8F237547B900191C37 /* WSProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				41584D90237547B900191C37 /* WSIndefiniteAnimationView.h */,
+				41584D91237547B900191C37 /* WSProgressHUD.m */,
+				41584D92237547B900191C37 /* MMMaterialDesignSpinner.h */,
+				41584D93237547B900191C37 /* WSProgressHUD.h */,
+				41584D94237547B900191C37 /* WSIndefiniteAnimationView.m */,
+				41584D95237547B900191C37 /* WSProgressBundle.bundle */,
+				41584D96237547B900191C37 /* MMMaterialDesignSpinner.m */,
+			);
+			path = WSProgressHUD;
+			sourceTree = "<group>";
+		};
+		41584DAA2375535E00191C37 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				41584DA72375535700191C37 /* ECIconDescControl.h */,
+				41584DA82375535700191C37 /* ECIconDescControl.m */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		415CBD8F236BD32900C4E006 /* CameraSettings */ = {
+			isa = PBXGroup;
+			children = (
+				415CBD9B236BD3C500C4E006 /* ECCameraSettingsView.h */,
+				415CBD9C236BD3C500C4E006 /* ECCameraSettingsView.m */,
+				41584D812375422B00191C37 /* ECPreviewRatioView.h */,
+				41584D822375422B00191C37 /* ECPreviewRatioView.m */,
+				41584DAB23755C3A00191C37 /* ECCameraSettingsMoreView.h */,
+				41584DAC23755C3A00191C37 /* ECCameraSettingsMoreView.m */,
+			);
+			path = CameraSettings;
+			sourceTree = "<group>";
+		};
+		415CBD90236BD33200C4E006 /* CameraPreview */ = {
+			isa = PBXGroup;
+			children = (
+				415CBD95236BD37400C4E006 /* ECCameraPreviewView.h */,
+				415CBD96236BD37400C4E006 /* ECCameraPreviewView.m */,
+			);
+			path = CameraPreview;
+			sourceTree = "<group>";
+		};
+		415CBD91236BD34B00C4E006 /* OperationPannel */ = {
+			isa = PBXGroup;
+			children = (
+				415CBD92236BD36100C4E006 /* ECOperationPannelView.h */,
+				415CBD93236BD36100C4E006 /* ECOperationPannelView.m */,
+			);
+			path = OperationPannel;
+			sourceTree = "<group>";
+		};
+		415D83FA236FC296002F2DBB /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				415D842A23702510002F2DBB /* XNCommonBlock.h */,
+				415D83FC236FC43B002F2DBB /* ECMacroPrefixHeader.pch */,
+				415D8417236FD4E4002F2DBB /* ColorMacroDefine.h */,
+				415D841F23700B71002F2DBB /* XN_CTViewConstants.h */,
+				41DE8F53237C39DC005F2D07 /* ECCategory.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		415D8400236FCBEA002F2DBB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				415D842423702029002F2DBB /* Protocol */,
+				415D842323702021002F2DBB /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		415D8404236FCDC6002F2DBB /* MediaTakenView */ = {
+			isa = PBXGroup;
+			children = (
+				415D8401236FCC0A002F2DBB /* ECMediaTakenView.h */,
+				415D8402236FCC0A002F2DBB /* ECMediaTakenView.m */,
+				415D8405236FCE36002F2DBB /* ECHotTakenView.h */,
+				415D8406236FCE36002F2DBB /* ECHotTakenView.m */,
+				415D8408236FCEB2002F2DBB /* ECTakenPhotoView.h */,
+				415D8409236FCEB2002F2DBB /* ECTakenPhotoView.m */,
+				415D840B236FCEC0002F2DBB /* ECTakenVideoView.h */,
+				415D840C236FCEC0002F2DBB /* ECTakenVideoView.m */,
+				415D840E236FCED1002F2DBB /* ECTakenEmoctionView.h */,
+				415D840F236FCED1002F2DBB /* ECTakenEmoctionView.m */,
+				415D8416236FD245002F2DBB /* ECTakenViewHeader.h */,
+			);
+			path = MediaTakenView;
+			sourceTree = "<group>";
+		};
+		415D8411236FD1D7002F2DBB /* cateogry */ = {
+			isa = PBXGroup;
+			children = (
+				415D841B23700053002F2DBB /* NS */,
+				415D8412236FD1DE002F2DBB /* UI */,
+			);
+			path = cateogry;
+			sourceTree = "<group>";
+		};
+		415D8412236FD1DE002F2DBB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				415D8413236FD1F1002F2DBB /* UIView+ECAdd.h */,
+				415D8414236FD1F1002F2DBB /* UIView+ECAdd.m */,
+				41DE8F50237C397B005F2D07 /* UIApplication+ECAdd.h */,
+				41DE8F51237C397B005F2D07 /* UIApplication+ECAdd.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		415D841B23700053002F2DBB /* NS */ = {
+			isa = PBXGroup;
+			children = (
+				415D841C2370006A002F2DBB /* NSMutableDictionary+ECAdd.h */,
+				415D841D2370006A002F2DBB /* NSMutableDictionary+ECAdd.m */,
+				41584DA423754AA400191C37 /* NSMutableArray+ECAdd.h */,
+				41584DA523754AA400191C37 /* NSMutableArray+ECAdd.m */,
+			);
+			path = NS;
+			sourceTree = "<group>";
+		};
+		415D842323702021002F2DBB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				41584DAA2375535E00191C37 /* control */,
+				41584D8F237547B900191C37 /* WSProgressHUD */,
+				41584D852375475400191C37 /* Gradient */,
+				41584D842375474F00191C37 /* Popview */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		415D842423702029002F2DBB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				415D842523702046002F2DBB /* ECActionProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		415D842623702480002F2DBB /* taken */ = {
+			isa = PBXGroup;
+			children = (
+				415D842723702495002F2DBB /* ECTakenManger.h */,
+				415D842823702495002F2DBB /* ECTakenManger.m */,
+			);
+			path = taken;
+			sourceTree = "<group>";
+		};
+		41795453237C25D300AEC529 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				41795454237C25DF00AEC529 /* ECSettingsModel.h */,
+				41795455237C25DF00AEC529 /* ECSettingsModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		41795457237C35E300AEC529 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				419177FF237988E90081FD8B /* ECSettingsViewController.h */,
+				41917800237988E90081FD8B /* ECSettingsViewController.m */,
+				4179545A237C362000AEC529 /* ECWaterMarkViewController.h */,
+				4179545B237C362000AEC529 /* ECWaterMarkViewController.m */,
+				41DE8F44237C3724005F2D07 /* ECFeedbackViewController.h */,
+				41DE8F45237C3724005F2D07 /* ECFeedbackViewController.m */,
+				41DE8F47237C3752005F2D07 /* ECPrivacyPolicyViewController.h */,
+				41DE8F48237C3752005F2D07 /* ECPrivacyPolicyViewController.m */,
+				41DE8F4D237C3790005F2D07 /* ECUserAgreementViewController.h */,
+				41DE8F4E237C3790005F2D07 /* ECUserAgreementViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		41795458237C35EB00AEC529 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				41795459237C35F500AEC529 /* cells */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		41795459237C35F500AEC529 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				41E96AB4237AE1A4004DD031 /* ECSettingsBaseTCell.h */,
+				41E96AB5237AE1A4004DD031 /* ECSettingsBaseTCell.m */,
+				41E96AAE237AE012004DD031 /* ECSettingsCircleSelectTCell.h */,
+				41E96AAF237AE012004DD031 /* ECSettingsCircleSelectTCell.m */,
+				41E96AB1237AE10F004DD031 /* ECSettingsSwitchTCell.h */,
+				41E96AB2237AE10F004DD031 /* ECSettingsSwitchTCell.m */,
+				41E96AB7237AE1E5004DD031 /* ECSettingsRightArrowTCell.h */,
+				41E96AB8237AE1E5004DD031 /* ECSettingsRightArrowTCell.m */,
+				41E96ABA237AE245004DD031 /* ECSettingsTextTCell.h */,
+				41E96ABB237AE245004DD031 /* ECSettingsTextTCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		419177FE237988D90081FD8B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				41795458237C35EB00AEC529 /* V */,
+				41795457237C35E300AEC529 /* C */,
+				41795453237C25D300AEC529 /* M */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		41DE8F54237C3BD1005F2D07 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F55237C3BE2005F2D07 /* ECWebViewViewController.h */,
+				41DE8F56237C3BE2005F2D07 /* ECWebViewViewController.m */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		41DE8F5E237D799F005F2D07 /* ThirtPart */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F5F237D79B1005F2D07 /* ZMJImageEditor */,
+			);
+			path = ThirtPart;
+			sourceTree = "<group>";
+		};
+		41DE8F5F237D79B1005F2D07 /* ZMJImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F60237D79B1005F2D07 /* Classes */,
+				41DE8FB7237D79B1005F2D07 /* Assets */,
+			);
+			path = ZMJImageEditor;
+			sourceTree = "<group>";
+		};
+		41DE8F60237D79B1005F2D07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F61237D79B1005F2D07 /* Mosica */,
+				41DE8F68237D79B1005F2D07 /* WBGImageEditorGestureManager.m */,
+				41DE8F69237D79B1005F2D07 /* WBGMoreKeyboard.m */,
+				41DE8F6A237D79B1005F2D07 /* WBGMoreKeyboard+CollectionView.h */,
+				41DE8F6B237D79B1005F2D07 /* WBGImageEditorViewController.h */,
+				41DE8F6C237D79B1005F2D07 /* WBGTextTool.h */,
+				41DE8F6D237D79B1005F2D07 /* WBGMoreKeyboardCell.h */,
+				41DE8F6E237D79B1005F2D07 /* WBGMoreKeyboardItem.h */,
+				41DE8F6F237D79B1005F2D07 /* WBGTextToolView.m */,
+				41DE8F70237D79B1005F2D07 /* UIColor+TLChat.h */,
+				41DE8F71237D79B1005F2D07 /* ColorfullButton.h */,
+				41DE8F72237D79B1005F2D07 /* WBGMosicaViewController.m */,
+				41DE8F74237D79B1005F2D07 /* WBGImageToolBase.m */,
+				41DE8F75237D79B1005F2D07 /* WBGBaseKeyboard.h */,
+				41DE8F76237D79B1005F2D07 /* WBGImageEditor.h */,
+				41DE8F77237D79B1005F2D07 /* TOCropViewController */,
+				41DE8FA3237D79B1005F2D07 /* WBGDrawTool.h */,
+				41DE8FA4237D79B1005F2D07 /* WBGMoreKeyboardDelegate.h */,
+				41DE8FA5237D79B1005F2D07 /* WBGImageEditorGestureManager.h */,
+				41DE8FA6237D79B1005F2D07 /* WBGKeyboardDelegate.h */,
+				41DE8FA7237D79B1005F2D07 /* WBGKeyboardProtocol.h */,
+				41DE8FA8237D79B1005F2D07 /* WBGMoreKeyboardItem.m */,
+				41DE8FA9237D79B1005F2D07 /* WBGMoreKeyboardCell.m */,
+				41DE8FAA237D79B1005F2D07 /* WBGTextTool.m */,
+				41DE8FAB237D79B1005F2D07 /* WBGImageEditorViewController.m */,
+				41DE8FAC237D79B1005F2D07 /* WBGMoreKeyboard.h */,
+				41DE8FAD237D79B1005F2D07 /* WBGMoreKeyboard+CollectionView.m */,
+				41DE8FAE237D79B1005F2D07 /* WBGImageToolBase.h */,
+				41DE8FAF237D79B1005F2D07 /* WBGMosicaViewController.h */,
+				41DE8FB0237D79B1005F2D07 /* WBGChatMacros.h */,
+				41DE8FB1237D79B1005F2D07 /* ColorfullButton.m */,
+				41DE8FB2237D79B1005F2D07 /* UIColor+TLChat.m */,
+				41DE8FB3237D79B1005F2D07 /* WBGTextToolView.h */,
+				41DE8FB4237D79B1005F2D07 /* WBGDrawTool.m */,
+				41DE8FB5237D79B1005F2D07 /* WBGImageEditor.m */,
+				41DE8FB6237D79B1005F2D07 /* WBGBaseKeyboard.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		41DE8F61237D79B1005F2D07 /* Mosica */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F62237D79B1005F2D07 /* XPixelItem.m */,
+				41DE8F63237D79B1005F2D07 /* XScratchView.h */,
+				41DE8F64237D79B1005F2D07 /* XRGBTool.h */,
+				41DE8F65237D79B1005F2D07 /* XPixelItem.h */,
+				41DE8F66237D79B1005F2D07 /* XScratchView.m */,
+				41DE8F67237D79B1005F2D07 /* XRGBTool.m */,
+			);
+			path = Mosica;
+			sourceTree = "<group>";
+		};
+		41DE8F77237D79B1005F2D07 /* TOCropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F82237D79B1005F2D07 /* Models */,
+				41DE8F8B237D79B1005F2D07 /* TOCropViewController.m */,
+				41DE8F90237D79B1005F2D07 /* TOCropViewController-Bridging-Header.h */,
+				41DE8F97237D79B1005F2D07 /* Views */,
+				41DE8FA2237D79B1005F2D07 /* TOCropViewController.h */,
+			);
+			path = TOCropViewController;
+			sourceTree = "<group>";
+		};
+		41DE8F82237D79B1005F2D07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F83237D79B1005F2D07 /* TOActivityCroppedImageProvider.m */,
+				41DE8F84237D79B1005F2D07 /* UIImage+CropRotate.m */,
+				41DE8F85237D79B1005F2D07 /* TOCropViewControllerTransitioning.m */,
+				41DE8F86237D79B1005F2D07 /* TOCroppedImageAttributes.m */,
+				41DE8F87237D79B1005F2D07 /* TOActivityCroppedImageProvider.h */,
+				41DE8F88237D79B1005F2D07 /* TOCropViewControllerTransitioning.h */,
+				41DE8F89237D79B1005F2D07 /* UIImage+CropRotate.h */,
+				41DE8F8A237D79B1005F2D07 /* TOCroppedImageAttributes.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41DE8F97237D79B1005F2D07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F98237D79B1005F2D07 /* TOCropView.h */,
+				41DE8F99237D79B1005F2D07 /* TOCropOverlayView.h */,
+				41DE8F9A237D79B1005F2D07 /* UIImage+library.h */,
+				41DE8F9B237D79B1005F2D07 /* TOCropToolbar.h */,
+				41DE8F9C237D79B1005F2D07 /* TOCropScrollView.m */,
+				41DE8F9D237D79B1005F2D07 /* TOCropView.m */,
+				41DE8F9E237D79B1005F2D07 /* TOCropOverlayView.m */,
+				41DE8F9F237D79B1005F2D07 /* TOCropToolbar.m */,
+				41DE8FA0237D79B1005F2D07 /* UIImage+library.m */,
+				41DE8FA1237D79B1005F2D07 /* TOCropScrollView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41DE8FB7237D79B1005F2D07 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8FB8237D79B1005F2D07 /* WBGImageEditorViewController.strings */,
+				41DE8FBB237D79B1005F2D07 /* EditImage.xcassets */,
+				41DE8FBC237D79B1005F2D07 /* .gitkeep */,
+				41DE8FBD237D79B1005F2D07 /* WBGImageEditorViewController.xib */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		41E17413236AF66900E6AA36 = {
+			isa = PBXGroup;
+			children = (
+				41E1741E236AF66900E6AA36 /* ElegantCamera */,
+				41E1743A236AF66C00E6AA36 /* ElegantCameraTests */,
+				41E17445236AF66C00E6AA36 /* ElegantCameraUITests */,
+				41E1741D236AF66900E6AA36 /* Products */,
+				45CB6507EA153BDACB59FA4E /* Pods */,
+				3078B183B979E7A2C54B2D40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41E1741D236AF66900E6AA36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41E1741C236AF66900E6AA36 /* ElegantCamera.app */,
+				41E17437236AF66C00E6AA36 /* ElegantCameraTests.xctest */,
+				41E17442236AF66C00E6AA36 /* ElegantCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41E1741E236AF66900E6AA36 /* ElegantCamera */ = {
+			isa = PBXGroup;
+			children = (
+				41DE8F5E237D799F005F2D07 /* ThirtPart */,
+				41DE8F54237C3BD1005F2D07 /* WebView */,
+				419177FE237988D90081FD8B /* Settings */,
+				415D8411236FD1D7002F2DBB /* cateogry */,
+				415D8404236FCDC6002F2DBB /* MediaTakenView */,
+				415D8400236FCBEA002F2DBB /* Common */,
+				415D83FA236FC296002F2DBB /* Macro */,
+				41E17463236BD15A00E6AA36 /* Main */,
+				41E1745A236BC71F00E6AA36 /* Base */,
+				41E17456236BC70200E6AA36 /* Camera */,
+				41E17454236AF69200E6AA36 /* ElegantCamera.entitlements */,
+				41E1741F236AF66900E6AA36 /* AppDelegate.h */,
+				41E17420236AF66900E6AA36 /* AppDelegate.m */,
+				41E17422236AF66900E6AA36 /* SceneDelegate.h */,
+				41E17423236AF66900E6AA36 /* SceneDelegate.m */,
+				41E1742B236AF66C00E6AA36 /* Assets.xcassets */,
+				41E1742D236AF66C00E6AA36 /* LaunchScreen.storyboard */,
+				41E17430236AF66C00E6AA36 /* Info.plist */,
+				41E17431236AF66C00E6AA36 /* main.m */,
+			);
+			path = ElegantCamera;
+			sourceTree = "<group>";
+		};
+		41E1743A236AF66C00E6AA36 /* ElegantCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				41E1743B236AF66C00E6AA36 /* ElegantCameraTests.m */,
+				41E1743D236AF66C00E6AA36 /* Info.plist */,
+			);
+			path = ElegantCameraTests;
+			sourceTree = "<group>";
+		};
+		41E17445236AF66C00E6AA36 /* ElegantCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41E17446236AF66C00E6AA36 /* ElegantCameraUITests.m */,
+				41E17448236AF66C00E6AA36 /* Info.plist */,
+			);
+			path = ElegantCameraUITests;
+			sourceTree = "<group>";
+		};
+		41E17456236BC70200E6AA36 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		41E1745A236BC71F00E6AA36 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				41E17457236BC71A00E6AA36 /* ECBaseViewController.h */,
+				41E17458236BC71A00E6AA36 /* ECBaseViewController.m */,
+				415D83FD236FC84D002F2DBB /* ECBaseNavViewController.h */,
+				415D83FE236FC84D002F2DBB /* ECBaseNavViewController.m */,
+				419177FB237981200081FD8B /* ECBaseView.h */,
+				419177FC237981200081FD8B /* ECBaseView.m */,
+				41917805237989B70081FD8B /* ECBaseTV.h */,
+				41917806237989B70081FD8B /* ECBaseTV.m */,
+				41917808237989CF0081FD8B /* ECBaseCV.h */,
+				41917809237989CF0081FD8B /* ECBaseCV.m */,
+				41E96AAB237ADFCD004DD031 /* ECBaseTCell.h */,
+				41E96AAC237ADFCD004DD031 /* ECBaseTCell.m */,
+				41DE8F5B237D31D2005F2D07 /* ECBaseCCell.h */,
+				41DE8F5C237D31D2005F2D07 /* ECBaseCCell.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		41E17463236BD15A00E6AA36 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				415CBD91236BD34B00C4E006 /* OperationPannel */,
+				415CBD90236BD33200C4E006 /* CameraPreview */,
+				415CBD8F236BD32900C4E006 /* CameraSettings */,
+				415D842623702480002F2DBB /* taken */,
+				41E17425236AF66900E6AA36 /* ECMainViewController.h */,
+				41E1745E236BC8AF00E6AA36 /* ECMainViewController.m */,
+				41E17460236BC93700E6AA36 /* ECMainView.h */,
+				41E17461236BC93700E6AA36 /* ECMainView.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		45CB6507EA153BDACB59FA4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9401CBD6E4EACED812083DA /* Pods-ElegantCamera.debug.xcconfig */,
+				D3261DE4D208C06805F70B09 /* Pods-ElegantCamera.release.xcconfig */,
+				D16B9E0D16AD4B1E5FCB8598 /* Pods-ElegantCameraTests.debug.xcconfig */,
+				F37F95393E7A03B7471E74AF /* Pods-ElegantCameraTests.release.xcconfig */,
+				C5AC82C59CD17455D9651E90 /* Pods-ElegantCameraUITests.debug.xcconfig */,
+				116988AD4658FCEC4314B853 /* Pods-ElegantCameraUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41E1741B236AF66900E6AA36 /* ElegantCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E1744B236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCamera" */;
+			buildPhases = (
+				4E20B3022AB97CC160AEC874 /* [CP] Check Pods Manifest.lock */,
+				41E17418236AF66900E6AA36 /* Sources */,
+				41E17419236AF66900E6AA36 /* Frameworks */,
+				41E1741A236AF66900E6AA36 /* Resources */,
+				EBCEFD3C19EFFDDDBF444DFB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElegantCamera;
+			productName = ElegantCamera;
+			productReference = 41E1741C236AF66900E6AA36 /* ElegantCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41E17436236AF66C00E6AA36 /* ElegantCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E1744E236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCameraTests" */;
+			buildPhases = (
+				91BF48968987E61CC1198F7D /* [CP] Check Pods Manifest.lock */,
+				41E17433236AF66C00E6AA36 /* Sources */,
+				41E17434236AF66C00E6AA36 /* Frameworks */,
+				41E17435236AF66C00E6AA36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E17439236AF66C00E6AA36 /* PBXTargetDependency */,
+			);
+			name = ElegantCameraTests;
+			productName = ElegantCameraTests;
+			productReference = 41E17437236AF66C00E6AA36 /* ElegantCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41E17441236AF66C00E6AA36 /* ElegantCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E17451236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCameraUITests" */;
+			buildPhases = (
+				BC191D8C81B0645E194F09AA /* [CP] Check Pods Manifest.lock */,
+				41E1743E236AF66C00E6AA36 /* Sources */,
+				41E1743F236AF66C00E6AA36 /* Frameworks */,
+				41E17440236AF66C00E6AA36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E17444236AF66C00E6AA36 /* PBXTargetDependency */,
+			);
+			name = ElegantCameraUITests;
+			productName = ElegantCameraUITests;
+			productReference = 41E17442236AF66C00E6AA36 /* ElegantCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41E17414236AF66900E6AA36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Aka;
+				TargetAttributes = {
+					41E1741B236AF66900E6AA36 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					41E17436236AF66C00E6AA36 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 41E1741B236AF66900E6AA36;
+					};
+					41E17441236AF66C00E6AA36 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 41E1741B236AF66900E6AA36;
+					};
+				};
+			};
+			buildConfigurationList = 41E17417236AF66900E6AA36 /* Build configuration list for PBXProject "ElegantCamera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				ar,
+				"zh-Hans",
+				ja,
+				es,
+				da,
+				it,
+				ko,
+				"zh-Hant",
+				tr,
+				pl,
+				vi,
+				ru,
+				fr,
+				id,
+				nl,
+				pt,
+			);
+			mainGroup = 41E17413236AF66900E6AA36;
+			productRefGroup = 41E1741D236AF66900E6AA36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41E1741B236AF66900E6AA36 /* ElegantCamera */,
+				41E17436236AF66C00E6AA36 /* ElegantCameraTests */,
+				41E17441236AF66C00E6AA36 /* ElegantCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41E1741A236AF66900E6AA36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41584D99237547B900191C37 /* WSProgressBundle.bundle in Resources */,
+				41DE8FDE237D79B2005F2D07 /* EditImage.xcassets in Resources */,
+				41DE8FE0237D79B2005F2D07 /* WBGImageEditorViewController.xib in Resources */,
+				41E1742F236AF66C00E6AA36 /* LaunchScreen.storyboard in Resources */,
+				41E1742C236AF66C00E6AA36 /* Assets.xcassets in Resources */,
+				41DE8FDD237D79B2005F2D07 /* WBGImageEditorViewController.strings in Resources */,
+				41DE8FDF237D79B2005F2D07 /* .gitkeep in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E17435236AF66C00E6AA36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E17440236AF66C00E6AA36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E20B3022AB97CC160AEC874 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElegantCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91BF48968987E61CC1198F7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElegantCameraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC191D8C81B0645E194F09AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElegantCameraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBCEFD3C19EFFDDDBF444DFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41E17418236AF66900E6AA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E96AB6237AE1A4004DD031 /* ECSettingsBaseTCell.m in Sources */,
+				41DE8F49237C3752005F2D07 /* ECPrivacyPolicyViewController.m in Sources */,
+				41DE8FD7237D79B2005F2D07 /* WBGMoreKeyboard+CollectionView.m in Sources */,
+				41DE8FD2237D79B2005F2D07 /* UIImage+library.m in Sources */,
+				41584D8A2375476A00191C37 /* WKBaseView.m in Sources */,
+				41E17421236AF66900E6AA36 /* AppDelegate.m in Sources */,
+				41DE8FC9237D79B1005F2D07 /* TOActivityCroppedImageProvider.m in Sources */,
+				41DE8FCD237D79B2005F2D07 /* TOCropViewController.m in Sources */,
+				41DE8F5D237D31D2005F2D07 /* ECBaseCCell.m in Sources */,
+				41DE8FD8237D79B2005F2D07 /* ColorfullButton.m in Sources */,
+				41E17462236BC93700E6AA36 /* ECMainView.m in Sources */,
+				41DE8FD6237D79B2005F2D07 /* WBGImageEditorViewController.m in Sources */,
+				41DE8F4F237C3790005F2D07 /* ECUserAgreementViewController.m in Sources */,
+				41DE8F46237C3724005F2D07 /* ECFeedbackViewController.m in Sources */,
+				41584D832375422B00191C37 /* ECPreviewRatioView.m in Sources */,
+				41E17432236AF66C00E6AA36 /* main.m in Sources */,
+				41795456237C25DF00AEC529 /* ECSettingsModel.m in Sources */,
+				41584DAD23755C3A00191C37 /* ECCameraSettingsMoreView.m in Sources */,
+				415D8410236FCED1002F2DBB /* ECTakenEmoctionView.m in Sources */,
+				415D842223701BED002F2DBB /* ECGradientView.m in Sources */,
+				41584D9D2375491400191C37 /* WKViewManager.m in Sources */,
+				41917807237989B70081FD8B /* ECBaseTV.m in Sources */,
+				41E96ABC237AE245004DD031 /* ECSettingsTextTCell.m in Sources */,
+				415D842923702496002F2DBB /* ECTakenManger.m in Sources */,
+				41E96AB9237AE1E5004DD031 /* ECSettingsRightArrowTCell.m in Sources */,
+				41DE8FD4237D79B2005F2D07 /* WBGMoreKeyboardCell.m in Sources */,
+				41584D9A237547B900191C37 /* MMMaterialDesignSpinner.m in Sources */,
+				415CBD94236BD36100C4E006 /* ECOperationPannelView.m in Sources */,
+				415CBD97236BD37400C4E006 /* ECCameraPreviewView.m in Sources */,
+				415D83FF236FC84D002F2DBB /* ECBaseNavViewController.m in Sources */,
+				415D8407236FCE36002F2DBB /* ECHotTakenView.m in Sources */,
+				41DE8FD3237D79B2005F2D07 /* WBGMoreKeyboardItem.m in Sources */,
+				415D8403236FCC0A002F2DBB /* ECMediaTakenView.m in Sources */,
+				41DE8FC2237D79B1005F2D07 /* WBGImageEditorGestureManager.m in Sources */,
+				41DE8FD5237D79B2005F2D07 /* WBGTextTool.m in Sources */,
+				41DE8FD0237D79B2005F2D07 /* TOCropOverlayView.m in Sources */,
+				41E96AB3237AE10F004DD031 /* ECSettingsSwitchTCell.m in Sources */,
+				41E96AAD237ADFCD004DD031 /* ECBaseTCell.m in Sources */,
+				4191780A237989CF0081FD8B /* ECBaseCV.m in Sources */,
+				41DE8FD1237D79B2005F2D07 /* TOCropToolbar.m in Sources */,
+				41DE8FC0237D79B1005F2D07 /* XScratchView.m in Sources */,
+				41DE8FCE237D79B2005F2D07 /* TOCropScrollView.m in Sources */,
+				41DE8FDC237D79B2005F2D07 /* WBGBaseKeyboard.m in Sources */,
+				41DE8FC3237D79B1005F2D07 /* WBGMoreKeyboard.m in Sources */,
+				41DE8FC7237D79B1005F2D07 /* WBGImageToolBase.m in Sources */,
+				41DE8FCB237D79B1005F2D07 /* TOCropViewControllerTransitioning.m in Sources */,
+				41DE8FC5237D79B1005F2D07 /* WBGMosicaViewController.m in Sources */,
+				41917801237988E90081FD8B /* ECSettingsViewController.m in Sources */,
+				415D8415236FD1F1002F2DBB /* UIView+ECAdd.m in Sources */,
+				41DE8F52237C397B005F2D07 /* UIApplication+ECAdd.m in Sources */,
+				41584D98237547B900191C37 /* WSIndefiniteAnimationView.m in Sources */,
+				415CBD9D236BD3C500C4E006 /* ECCameraSettingsView.m in Sources */,
+				41DE8FC1237D79B1005F2D07 /* XRGBTool.m in Sources */,
+				41584D8B2375476A00191C37 /* WKPopBaseView.m in Sources */,
+				41DE8FBF237D79B1005F2D07 /* XPixelItem.m in Sources */,
+				41E17424236AF66900E6AA36 /* SceneDelegate.m in Sources */,
+				419177FD237981200081FD8B /* ECBaseView.m in Sources */,
+				415D840A236FCEB2002F2DBB /* ECTakenPhotoView.m in Sources */,
+				41E17459236BC71A00E6AA36 /* ECBaseViewController.m in Sources */,
+				41584DA02375493D00191C37 /* AppDelegate+visableVC.m in Sources */,
+				41584D8E2375478900191C37 /* NSObject+WKKeyboardIsShow.m in Sources */,
+				41E96AB0237AE012004DD031 /* ECSettingsCircleSelectTCell.m in Sources */,
+				41DE8FDB237D79B2005F2D07 /* WBGImageEditor.m in Sources */,
+				415D841E2370006A002F2DBB /* NSMutableDictionary+ECAdd.m in Sources */,
+				41E1745F236BC8B000E6AA36 /* ECMainViewController.m in Sources */,
+				41DE8FD9237D79B2005F2D07 /* UIColor+TLChat.m in Sources */,
+				41DE8FCA237D79B1005F2D07 /* UIImage+CropRotate.m in Sources */,
+				41584DA623754AA400191C37 /* NSMutableArray+ECAdd.m in Sources */,
+				41DE8FC4237D79B1005F2D07 /* WBGTextToolView.m in Sources */,
+				41DE8FCF237D79B2005F2D07 /* TOCropView.m in Sources */,
+				41DE8F57237C3BE2005F2D07 /* ECWebViewViewController.m in Sources */,
+				41DE8FDA237D79B2005F2D07 /* WBGDrawTool.m in Sources */,
+				41584D97237547B900191C37 /* WSProgressHUD.m in Sources */,
+				415D840D236FCEC0002F2DBB /* ECTakenVideoView.m in Sources */,
+				41DE8FCC237D79B1005F2D07 /* TOCroppedImageAttributes.m in Sources */,
+				41584DA92375535700191C37 /* ECIconDescControl.m in Sources */,
+				4179545C237C362000AEC529 /* ECWaterMarkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E17433236AF66C00E6AA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E1743C236AF66C00E6AA36 /* ElegantCameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E1743E236AF66C00E6AA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E17447236AF66C00E6AA36 /* ElegantCameraUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41E17439236AF66C00E6AA36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41E1741B236AF66900E6AA36 /* ElegantCamera */;
+			targetProxy = 41E17438236AF66C00E6AA36 /* PBXContainerItemProxy */;
+		};
+		41E17444236AF66C00E6AA36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41E1741B236AF66900E6AA36 /* ElegantCamera */;
+			targetProxy = 41E17443236AF66C00E6AA36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41DE8FB8237D79B1005F2D07 /* WBGImageEditorViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41DE8FB9237D79B1005F2D07 /* zh-Hans */,
+				41DE8FBA237D79B1005F2D07 /* en */,
+			);
+			name = WBGImageEditorViewController.strings;
+			sourceTree = "<group>";
+		};
+		41DE8FBD237D79B1005F2D07 /* WBGImageEditorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41DE8FBE237D79B1005F2D07 /* Base */,
+			);
+			name = WBGImageEditorViewController.xib;
+			sourceTree = "<group>";
+		};
+		41E1742D236AF66C00E6AA36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41E1742E236AF66C00E6AA36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41E17449236AF66C00E6AA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		41E1744A236AF66C00E6AA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41E1744C236AF66C00E6AA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9401CBD6E4EACED812083DA /* Pods-ElegantCamera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ElegantCamera/ElegantCamera.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9F6F9M7N5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Macro/ECMacroPrefixHeader.pch";
+				INFOPLIST_FILE = ElegantCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.comic.ismh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		41E1744D236AF66C00E6AA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3261DE4D208C06805F70B09 /* Pods-ElegantCamera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ElegantCamera/ElegantCamera.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9F6F9M7N5;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Macro/ECMacroPrefixHeader.pch";
+				INFOPLIST_FILE = ElegantCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.comic.ismh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		41E1744F236AF66C00E6AA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16B9E0D16AD4B1E5FCB8598 /* Pods-ElegantCameraTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = ElegantCameraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.helinyu.music.ElegantCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElegantCamera.app/ElegantCamera";
+			};
+			name = Debug;
+		};
+		41E17450236AF66C00E6AA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37F95393E7A03B7471E74AF /* Pods-ElegantCameraTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = ElegantCameraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.helinyu.music.ElegantCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElegantCamera.app/ElegantCamera";
+			};
+			name = Release;
+		};
+		41E17452236AF66C00E6AA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5AC82C59CD17455D9651E90 /* Pods-ElegantCameraUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = ElegantCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.helinyu.music.ElegantCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElegantCamera;
+			};
+			name = Debug;
+		};
+		41E17453236AF66C00E6AA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116988AD4658FCEC4314B853 /* Pods-ElegantCameraUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2XBEJ6876;
+				INFOPLIST_FILE = ElegantCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.helinyu.music.ElegantCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElegantCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41E17417236AF66900E6AA36 /* Build configuration list for PBXProject "ElegantCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E17449236AF66C00E6AA36 /* Debug */,
+				41E1744A236AF66C00E6AA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E1744B236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E1744C236AF66C00E6AA36 /* Debug */,
+				41E1744D236AF66C00E6AA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E1744E236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E1744F236AF66C00E6AA36 /* Debug */,
+				41E17450236AF66C00E6AA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E17451236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E17452236AF66C00E6AA36 /* Debug */,
+				41E17453236AF66C00E6AA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41E17414236AF66900E6AA36 /* Project object */;
+}
