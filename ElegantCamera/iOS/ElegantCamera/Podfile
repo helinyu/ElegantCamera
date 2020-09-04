@@ -8,7 +8,7 @@ target 'ElegantCamera' do
   pod 'Masonry', '~> 1.1.0'
   pod 'SDWebImage'#,'~>3.8.2'
   pod 'SDWebImage/WebP'
-  pod 'YYKit', '~> 1.0.9'
+#  pod 'YYKit'
 #  pod 'GPUImage' # 要替换成为metal 但是两个都需要去了解
   pod 'CocoaLumberjack'
 #  pod "ReactiveCocoa", "~> 2.5"
@@ -20,7 +20,7 @@ target 'ElegantCamera' do
   
   pod 'CLImageEditor', '~> 0.2.4'
 #  pod 'MLeaksFinder', '~> 1.0.0'
-#  pod 'ZMJImageEditor'
+  pod 'ZMJImageEditor'
   
   pod "Shimmer"
   pod "WSProgressHUD"

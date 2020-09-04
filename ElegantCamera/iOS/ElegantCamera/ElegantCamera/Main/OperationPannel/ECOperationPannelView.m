@@ -95,7 +95,8 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
     {
         UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
         flowLayout.minimumInteritemSpacing = KMWidth(8.f);
-        CGFloat width = ceil([@"热门模块" sizeForFont:[UIFont systemFontOfSize:14.f] size:CGSizeMake(CGFLOAT_MAX, KMWidth(kCollectionViewH)) mode:NSLineBreakByTruncatingTail].width);
+//        CGFloat width = ceil([@"热门模块" sizeForFont:[UIFont systemFontOfSize:14.f] size:CGSizeMake(CGFLOAT_MAX, KMWidth(kCollectionViewH)) mode:NSLineBreakByTruncatingTail].width);
+        CGFloat width = KMWidth(200.f);
         _collectionView = [[ECBaseCV alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
         flowLayout.itemSize = CGSizeMake(width, KMWidth(kCollectionViewH));
         kCV_registerWithClassCell(_collectionView, ECSettingCCell);

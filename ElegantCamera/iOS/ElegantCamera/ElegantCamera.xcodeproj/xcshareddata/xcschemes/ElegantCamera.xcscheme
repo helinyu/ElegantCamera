@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41E1741B236AF66900E6AA36"
-               BuildableName = "&#x9177;&#x62cd;.app"
+               BuildableName = "&#x73a9;&#x62cd;.app"
                BlueprintName = "ElegantCamera"
                ReferencedContainer = "container:ElegantCamera.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41E1741B236AF66900E6AA36"
-            BuildableName = "&#x9177;&#x62cd;.app"
+            BuildableName = "&#x73a9;&#x62cd;.app"
             BlueprintName = "ElegantCamera"
             ReferencedContainer = "container:ElegantCamera.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41E1741B236AF66900E6AA36"
-            BuildableName = "&#x9177;&#x62cd;.app"
+            BuildableName = "&#x73a9;&#x62cd;.app"
             BlueprintName = "ElegantCamera"
             ReferencedContainer = "container:ElegantCamera.xcodeproj">
          </BuildableReference>

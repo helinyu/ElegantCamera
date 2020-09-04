@@ -10,6 +10,7 @@
 #import "ECOperationPannelView.h"
 #import "ECCameraPreviewView.h"
 #import "ECCameraSettingsView.h"
+#import <UIView+YYAdd.h>
 
 static CGFloat const kOperationPannelHeight = 167.f;
 static CGFloat const kDefaultPreviewRatio = (4.f/3);

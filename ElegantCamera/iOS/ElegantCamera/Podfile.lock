@@ -21,13 +21,6 @@ PODS:
   - Masonry (1.1.0)
   - MMKV (1.0.24)
   - OCMock (3.7.1)
-  - ReactiveCocoa (2.5):
-    - ReactiveCocoa/UI (= 2.5)
-  - ReactiveCocoa/Core (2.5):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5)
-  - ReactiveCocoa/UI (2.5):
-    - ReactiveCocoa/Core
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
@@ -38,9 +31,11 @@ PODS:
   - TZImagePickerController (3.4.2)
   - WSProgressHUD (1.1.5):
     - Shimmer
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - ZMJImageEditor (0.1.4):
+    - YYCategories (~> 1.0.4)
 
 DEPENDENCIES:
   - CLImageEditor (~> 0.2.4)
@@ -50,13 +45,12 @@ DEPENDENCIES:
   - Masonry (~> 1.1.0)
   - MMKV (~> 1.0.23)
   - OCMock
-  - ReactiveCocoa (~> 2.5)
   - SDWebImage
   - SDWebImage/WebP
   - Shimmer
   - TZImagePickerController
   - WSProgressHUD
-  - YYKit (~> 1.0.9)
+  - ZMJImageEditor
 
 SPEC REPOS:
   trunk:
@@ -68,12 +62,12 @@ SPEC REPOS:
     - Masonry
     - MMKV
     - OCMock
-    - ReactiveCocoa
     - SDWebImage
     - Shimmer
     - TZImagePickerController
     - WSProgressHUD
-    - YYKit
+    - YYCategories
+    - ZMJImageEditor
 
 SPEC CHECKSUMS:
   CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
@@ -84,13 +78,13 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 758b2edee46b08bdd958db4169191afb9a6d4ebd
   OCMock: 75fbeaa46a9b11f8c182bbb1d1f7e9a35ccc9955
-  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
   WSProgressHUD: 8214e549869776514e8055527c590a109c025e3e
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  ZMJImageEditor: 144cdb63129c85156bb0b548b4832ee51296f046
 
-PODFILE CHECKSUM: e470a049de20ce3e39561ee1749682ca340e56f2
+PODFILE CHECKSUM: db8ad43031408a649d6d6e53778a2fc7e0f6a41e
 
 COCOAPODS: 1.9.3

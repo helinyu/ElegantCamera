@@ -48,10 +48,11 @@
 
 @end
 
-#import "WBGImageEditor.h"
-#import "WBGMoreKeyboardItem.h"
+//#import "WBGImageEditor.h"
+//#import "WBGMoreKeyboardItem.h"
+#import <WBGImageEditor.h>
 
-@interface ECMainViewController (WBGImageEditor)<WBGImageEditorDelegate, WBGImageEditorDataSource, WBGImageEditorTransitionDelegate>
+@interface ECMainViewController (WBGImageEditor)<WBGImageEditorDelegate, WBGImageEditorTransitionDelegate>
 
 - (void)onEditorWithImg:(UIImage *)originImg then:(ImgBlock)then;
 

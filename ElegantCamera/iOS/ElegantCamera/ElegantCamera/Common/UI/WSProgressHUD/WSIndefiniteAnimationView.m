@@ -32,7 +32,7 @@
 
 - (void)layoutAnimationLayer {
     [self addSubview:self.indicatorView];
-    self.indicatorView.center = CGPointMake(self.width/2, self.height/2);
+    self.indicatorView.center = CGPointMake(self.bounds.size.width/2.f, self.bounds.size.height/2.f);
 }
 
 -(void)setHidden:(BOOL)hidden

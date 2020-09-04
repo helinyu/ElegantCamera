@@ -9,9 +9,12 @@
 #ifndef ColorMacroDefine_h
 #define ColorMacroDefine_h
 
-#import <YYKit/YYKit.h>
+#import "UIColor+Hex.h"
 
-#define HexColor(hexString) UIColorHex(hexString)
+
+#define HexColor(hexString) [UIColor dn_hexStringToColor:hexString]
+#define HexColorWithNumber(hexString) [UIColor dn_colorWithHexNumber:hexString]
+
 #define HexColorWithAlpha(hexString, alpha) [HexColor(hexString) colorWithAlphaComponent:alpha]
 
 // 16进制颜色的方法
@@ -54,13 +57,13 @@ blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 #define kRGB_53 HexColor(@"535353")
 #define kRGB_55 HexColor(@"555555")
 #define kRGB_63 HexColor(@"636363")
-#define kRGB_66 HexColor(666666)
+#define kRGB_66 HexColor(@"666666")
 #define kRGB_71 HexColor(@"717171")
 #define kRGB_77 HexColor(@"777777")
 #define kRGB_80 HexColor(@"808080")
 #define kRGB_81 HexColor(@"818181")
 #define kRGB_98 HexColor(@"989898")
-#define kRGB_99 HexColor(999999)
+#define kRGB_99 HexColor(@"999999")
 #define kRGB_9B HexColor(@"9B9B9B")
 
 #define kRGB_A0 HexColor(@"a0a0a0")
@@ -82,7 +85,7 @@ blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 #define kRGB_CD HexColor(@"CDCDCD")
 
 #define kRGB_D8 HexColor(@"D8D8D8")
-#define kRGB_DD HexColor(DDDDDD)
+#define kRGB_DD HexColor(@"DDDDDD")
 
 #define kRGB_E3 HexColor(@"E3E3E3")
 #define kRGB_E4 HexColor(@"E4E4E4")
@@ -105,7 +108,7 @@ blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 #define kRGB_F8 HexColor(@"F8F8F8")
 #define kRGB_F9 HexColor(@"F9F9F9")
 #define kRGB_FA HexColor(@"FAFAFA")
-#define kRGB_FF HexColor(ffffff)
+#define kRGB_FF HexColor(@"ffffff")
 
 #define kRGB_FC5959 HexColor(@"FC5959")
 #define kRGB_FFF7FB HexColor(@"FFF7FB")

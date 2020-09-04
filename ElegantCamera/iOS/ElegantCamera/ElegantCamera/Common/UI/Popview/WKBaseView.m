@@ -8,6 +8,7 @@
 
 #import "WKBaseView.h"
 #import "WKViewManager.h"
+#import <NSObject+YYAdd.h>
 
 #define NightViewTag (98765)
 

@@ -50,7 +50,7 @@ tmp_project_dst_file=/tmp/${project_name}.dst
 echo "lt - $tmp_project_dst_file"
 
 if [ -d ${tmp_project_dst_file} ]; then 
- rm -rf ${tmp_project_dst_file}
+rm -rf ${tmp_project_dst_file}
 fi
 
 xcodebuild clean || exit

@@ -9,6 +9,7 @@
 #import "WKPopBaseView.h"
 #import "NSObject+WKKeyboardIsShow.h"
 #import "WSProgressHUD.h"
+#import <UIView+YYAdd.h>
 
 @interface WKPopBaseView ()
 

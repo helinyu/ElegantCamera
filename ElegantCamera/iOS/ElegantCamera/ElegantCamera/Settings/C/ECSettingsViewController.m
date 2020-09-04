@@ -16,7 +16,6 @@
 #import "ECWaterMarkViewController.h"
 #import "ECFeedbackViewController.h"
 #import "ECPrivacyPolicyViewController.h"
-#import "ECUserAgreementViewController.h"
 #import "ECWebViewViewController.h"
 
 @interface ECSettingsViewController ()<UITableViewDataSource, UITableViewDelegate, ECActionProtocol>
@@ -178,12 +177,11 @@
     if ([obj isKindOfClass:[UITableViewCell class]]) {
         NSIndexPath *curIndexPath = [self.tableView indexPathForCell:obj];
         NSArray<ECSettingsModel *> *sectionDatas = [self.datasource safeObjectForIndex:curIndexPath.section];
-         ECSettingsModel *item = [sectionDatas safeObjectForIndex:curIndexPath.row];
+        ECSettingsModel *item = [sectionDatas safeObjectForIndex:curIndexPath.row];
         BOOL value = [item.content boolValue];
-       item.content = @(!value);
-        [self.tableView reloadRowAtIndexPath:curIndexPath withRowAnimation:UITableViewRowAnimationAutomatic];
+        item.content = @(!value);
+        [self.tableView reloadRowsAtIndexPaths:@[curIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
-  
 }
 
 @end
