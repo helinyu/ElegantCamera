@@ -113,6 +113,7 @@ EC_DYNAMIC_VIEW(ECMainView);
     self.view.closeBtn.hidden = YES;
     self.view.operationPannelView.saveBtn.hidden = YES;
     self.view.operationPannelView.editorBtn.hidden = YES;
+    [self.view.cameraPreviewView sendSubviewToBack:self.previewImgView];
     [[ECTakenManger single] restartSession];
 }
 
