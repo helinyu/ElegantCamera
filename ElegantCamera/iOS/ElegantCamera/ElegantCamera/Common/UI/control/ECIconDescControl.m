@@ -27,13 +27,13 @@
     _coverBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self addSubviews:@[_iconView, _descL, _coverBtn]];
     
-    [_descL mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(self);
-        make.top.equalTo(self.mas_centerY);
-    }];
-    _descL.font = HJTFont(14.f);
-    _descL.textColor = kRGB_33;
-    _descL.textAlignment = NSTextAlignmentCenter;
+//    [_descL mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.equalTo(self);
+//        make.top.equalTo(self.mas_centerY);
+//    }];
+//    _descL.font = HJTFont(14.f);
+//    _descL.textAlignment = NSTextAlignmentCenter;
+//    _descL.textColor = UIColorHex(#1296db);
     
     [_iconView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.mas_centerY);
@@ -43,7 +43,6 @@
     [_coverBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self);
     }];
-    
 }
 
 - (void)configIconName:(NSString *)iconName desc:(NSString *)desc {

@@ -9,11 +9,12 @@ target 'ElegantCamera' do
   pod 'SDWebImage'#,'~>3.8.2'
   pod 'SDWebImage/WebP'
   pod 'YYKit', '~> 1.0.9'
-  pod 'GPUImage', '~> 0.1.7'  
+  pod 'GPUImage', '~> 0.1.7'
   pod 'CocoaLumberjack'
   pod "ReactiveCocoa", "~> 2.5"
   pod "Shimmer"
-  pod 'TZImagePickerController', '~> 3.2.7'
+#  pod 'TZImagePickerController', '~> 3.2.7'
+    pod 'TZImagePickerController'
   pod 'MMKV', '~> 1.0.23'
   pod 'LBXScan/LBXNative','~> 2.4'
   

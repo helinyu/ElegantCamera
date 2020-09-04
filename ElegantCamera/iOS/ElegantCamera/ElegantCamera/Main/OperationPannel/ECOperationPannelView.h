@@ -19,7 +19,8 @@ typedef NS_ENUM(NSUInteger, ECMainPhotoType) {
     ECMainPhotoTypeBeauty,
     ECMainPhotoTypeSticker,
     ECMainPhotoTypeBack,
-    ECMainPhotoTypeShare
+    ECMainPhotoTypeShare,
+    ECMainPhotoTypeSavePhoto,
 };
 
 @interface ECOperationPannelView : ECBaseView

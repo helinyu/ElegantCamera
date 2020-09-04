@@ -10,7 +10,7 @@
 #import "ECBaseCV.h"
 #import "ECMediaTakenView.h"
 #import "ECIconDescControl.h"
-
+#import "LGButton.h"
 #import "UIView+ECAdd.h"
 
 @interface ECSettingCCell : UICollectionViewCell
@@ -61,6 +61,10 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
 @property (nonatomic, strong) ECIconDescControl *stickerCtrl; // 贴纸
 //修图、美颜、滤镜、贴纸；
 
+//save photo
+@property (nonatomic, strong) LGButton *saveBtn;
+@property (nonatomic, strong) LGButton *editorBtn;
+
 // has taken photo
 @property (nonatomic, strong) ECIconDescControl *backCtrl; // 返回
 @property (nonatomic, strong) ECIconDescControl *shareCtrl; // 分享
@@ -80,6 +84,8 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
 
 - (void)baseInit {
     [super baseInit];
+    
+    self.backgroundColor = [UIColor grayColor];
     
     _takenViewDict = [NSMutableDictionary new];
     _curIndex = kDefaultIndex;
@@ -123,10 +129,9 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
             make.top.equalTo(self.filterCtrl.mas_centerY).offset(KMWidth(kCtrlDescCenterYMargin));
         }];
         _filterCtrl.coverBtn.tag = ECMainPhotoTypeFilter;
-#warning  -- need to update centerX
         
         [_editorPhotoCtrl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(_filterCtrl).offset(-KMWidth(kCtrlWidth +kCtrlHSpace));
+            make.centerX.equalTo(self).multipliedBy(1.f/2.f);
             make.width.height.mas_equalTo(KMWidth(kCtrlWidth));
             make.top.equalTo(self.collectionView.mas_bottom).offset(KMWidth(kCtrlTopMargin));
         }];
@@ -185,12 +190,45 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
         }
     }
     
+
+//     editor photo
+    {
+        LGButton *editorBtn = [LGButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:editorBtn];
+        _editorBtn = editorBtn;
+        [editorBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self).multipliedBy(1.f/2.f);
+            make.width.height.mas_equalTo(KMWidth(kCtrlWidth));
+            make.top.equalTo(self.collectionView.mas_bottom).offset(KMWidth(kCtrlTopMargin));
+        }];
+        [editorBtn setImage:[UIImage imageNamed:@"icon_editor_photo30"] forState:UIControlStateNormal];
+        [editorBtn addTarget:self action:@selector(onCtrlAction:) forControlEvents:UIControlEventTouchUpInside];
+        editorBtn.tag = ECMainPhotoTypeEditorPhoto;
+    }
+    
+//     save btn
+    {
+        LGButton *saveBtn = [LGButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:saveBtn];
+        _saveBtn = saveBtn;
+        [saveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self).multipliedBy(3.f/2.f);
+            make.width.height.mas_equalTo(KMWidth(kCtrlWidth));
+            make.top.equalTo(self.collectionView.mas_bottom).offset(KMWidth(kCtrlTopMargin));
+        }];
+        [saveBtn setImage:[UIImage imageNamed:@"icon_save30"] forState:UIControlStateNormal];
+        [saveBtn addTarget:self action:@selector(onCtrlAction:) forControlEvents:UIControlEventTouchUpInside];
+        saveBtn.tag = ECMainPhotoTypeSavePhoto;
+    }
+    
+    
 //    [self configViewWithTakenFlag:NO];
     
 //FIXME: next time to fix me
     self.filterCtrl.hidden = YES;
     self.beautyCtrl.hidden = YES;
     self.stickerCtrl.hidden = YES;
+    self.editorPhotoCtrl.hidden = YES;
     
 }
 

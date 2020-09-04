@@ -33,7 +33,7 @@ PODS:
     - libwebp (< 2.0, >= 0.5)
     - SDWebImage/Core
   - Shimmer (1.0.2)
-  - TZImagePickerController (3.2.9)
+  - TZImagePickerController (3.4.2)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -50,7 +50,7 @@ DEPENDENCIES:
   - SDWebImage
   - SDWebImage/WebP
   - Shimmer
-  - TZImagePickerController (~> 3.2.7)
+  - TZImagePickerController
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
@@ -81,9 +81,9 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
-  TZImagePickerController: 1f92968aa0e98a06b9e2eccca8560acc19254257
+  TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 0dfcd2f8ce3e08be1cfe6f2b4acbc1152d06d6bd
+PODFILE CHECKSUM: 484036d36041f7057c6bd5a003edeadcf6909ed0
 
 COCOAPODS: 1.9.3

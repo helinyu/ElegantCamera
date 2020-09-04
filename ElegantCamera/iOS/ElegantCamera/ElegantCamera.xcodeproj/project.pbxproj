@@ -33,6 +33,8 @@
 		415D841E2370006A002F2DBB /* NSMutableDictionary+ECAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D841D2370006A002F2DBB /* NSMutableDictionary+ECAdd.m */; };
 		415D842223701BED002F2DBB /* ECGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D842123701BED002F2DBB /* ECGradientView.m */; };
 		415D842923702496002F2DBB /* ECTakenManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D842823702495002F2DBB /* ECTakenManger.m */; };
+		4172EBF42501E7C4002012AF /* LGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172EBF22501E7C3002012AF /* LGButton.m */; };
+		4172EBF52501E7C4002012AF /* JXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172EBF32501E7C3002012AF /* JXButton.m */; };
 		41795456237C25DF00AEC529 /* ECSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41795455237C25DF00AEC529 /* ECSettingsModel.m */; };
 		4179545C237C362000AEC529 /* ECWaterMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4179545B237C362000AEC529 /* ECWaterMarkViewController.m */; };
 		419177FD237981200081FD8B /* ECBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 419177FC237981200081FD8B /* ECBaseView.m */; };
@@ -176,6 +178,10 @@
 		415D842723702495002F2DBB /* ECTakenManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECTakenManger.h; sourceTree = "<group>"; };
 		415D842823702495002F2DBB /* ECTakenManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECTakenManger.m; sourceTree = "<group>"; };
 		415D842A23702510002F2DBB /* XNCommonBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNCommonBlock.h; sourceTree = "<group>"; };
+		4172EBF02501E7C3002012AF /* LGButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGButton.h; sourceTree = "<group>"; };
+		4172EBF12501E7C3002012AF /* JXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXButton.h; sourceTree = "<group>"; };
+		4172EBF22501E7C3002012AF /* LGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGButton.m; sourceTree = "<group>"; };
+		4172EBF32501E7C3002012AF /* JXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXButton.m; sourceTree = "<group>"; };
 		41795454237C25DF00AEC529 /* ECSettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECSettingsModel.h; sourceTree = "<group>"; };
 		41795455237C25DF00AEC529 /* ECSettingsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSettingsModel.m; sourceTree = "<group>"; };
 		4179545A237C362000AEC529 /* ECWaterMarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECWaterMarkViewController.h; sourceTree = "<group>"; };
@@ -500,6 +506,7 @@
 		415D842323702021002F2DBB /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4172EBEF2501E7C3002012AF /* Button */,
 				41584DAA2375535E00191C37 /* control */,
 				41584D8F237547B900191C37 /* WSProgressHUD */,
 				41584D852375475400191C37 /* Gradient */,
@@ -523,6 +530,17 @@
 				415D842823702495002F2DBB /* ECTakenManger.m */,
 			);
 			path = taken;
+			sourceTree = "<group>";
+		};
+		4172EBEF2501E7C3002012AF /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				4172EBF02501E7C3002012AF /* LGButton.h */,
+				4172EBF12501E7C3002012AF /* JXButton.h */,
+				4172EBF22501E7C3002012AF /* LGButton.m */,
+				4172EBF32501E7C3002012AF /* JXButton.m */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		41795453237C25D300AEC529 /* M */ = {
@@ -823,8 +841,8 @@
 				415CBD91236BD34B00C4E006 /* OperationPannel */,
 				415CBD90236BD33200C4E006 /* CameraPreview */,
 				415CBD8F236BD32900C4E006 /* CameraSettings */,
-				415D842623702480002F2DBB /* taken */,
 				41E17425236AF66900E6AA36 /* ECMainViewController.h */,
+				415D842623702480002F2DBB /* taken */,
 				41E1745E236BC8AF00E6AA36 /* ECMainViewController.m */,
 				41E17460236BC93700E6AA36 /* ECMainView.h */,
 				41E17461236BC93700E6AA36 /* ECMainView.m */,
@@ -1118,7 +1136,9 @@
 				415D83FF236FC84D002F2DBB /* ECBaseNavViewController.m in Sources */,
 				415D8407236FCE36002F2DBB /* ECHotTakenView.m in Sources */,
 				41DE8FD3237D79B2005F2D07 /* WBGMoreKeyboardItem.m in Sources */,
+				4172EBF42501E7C4002012AF /* LGButton.m in Sources */,
 				415D8403236FCC0A002F2DBB /* ECMediaTakenView.m in Sources */,
+				4172EBF52501E7C4002012AF /* JXButton.m in Sources */,
 				41DE8FC2237D79B1005F2D07 /* WBGImageEditorGestureManager.m in Sources */,
 				41DE8FD5237D79B2005F2D07 /* WBGTextTool.m in Sources */,
 				41DE8FD0237D79B2005F2D07 /* TOCropOverlayView.m in Sources */,
