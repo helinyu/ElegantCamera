@@ -1,11 +1,9 @@
 ${PODS_ROOT}/Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework
 ${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
-${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework
 ${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework
 ${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework
 ${PODS_ROOT}/LookinServer/LookinServer.framework
-${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework
 ${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework
@@ -14,7 +12,5 @@ ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/Shimmer/Shimmer.framework
 ${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework
 ${BUILT_PRODUCTS_DIR}/WSProgressHUD/WSProgressHUD.framework
-${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework
 ${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework
-${BUILT_PRODUCTS_DIR}/ZMJImageEditor/ZMJImageEditor.framework
 ${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework

@@ -19,8 +19,8 @@ target 'ElegantCamera' do
   pod 'LBXScan/LBXNative','~> 2.4'
   
   pod 'CLImageEditor', '~> 0.2.4'
-  pod 'MLeaksFinder', '~> 1.0.0'
-  pod 'ZMJImageEditor'
+#  pod 'MLeaksFinder', '~> 1.0.0'
+#  pod 'ZMJImageEditor'
   
   pod "Shimmer"
   pod "WSProgressHUD"

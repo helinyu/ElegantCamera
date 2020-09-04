@@ -202,8 +202,8 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
             make.top.equalTo(self.collectionView.mas_bottom).offset(KMWidth(kCtrlTopMargin));
         }];
         [editorBtn setImage:[UIImage imageNamed:@"icon_editor_photo30"] forState:UIControlStateNormal];
-        [editorBtn addTarget:self action:@selector(onCtrlAction:) forControlEvents:UIControlEventTouchUpInside];
         editorBtn.tag = ECMainPhotoTypeEditorPhoto;
+        editorBtn.hidden = YES;
     }
     
 //     save btn

@@ -20,12 +20,14 @@
 #import "ECTakenManger.h"
 #import "LGButton.h"
 #import "DDLog+LOGV.h"
+#import "CLImageEditor.h"
 
-@interface ECMainViewController ()<ECMediaTakenViewProtocol>
+@interface ECMainViewController ()<ECMediaTakenViewProtocol, CLImageEditorDelegate>
 
 @property (nonatomic, strong) ECMainView *view;
 
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *curPreviewLayer;
+@property (nonatomic, strong) UIImageView *previewImgView;
 
 @property (nonatomic, strong) UIImage *takenImg;
 
@@ -67,6 +69,7 @@ EC_DYNAMIC_VIEW(ECMainView);
     
     [self.view.closeBtn addTarget:self action:@selector(onCloseAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view.operationPannelView.saveBtn addTarget:self action:@selector(onSaveAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view.operationPannelView.editorBtn addTarget:self action:@selector(onEditorAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)initText {
@@ -93,9 +96,23 @@ EC_DYNAMIC_VIEW(ECMainView);
     }];
 }
 
+- (void)onEditorAction:(id)sender {
+//    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:9 delegate:self];
+//    [imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
+//
+//    }];
+//    [self presentViewController:imagePickerVc animated:YES completion:nil];
+    
+    CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:self.takenImg];
+    editor.delegate = self;
+    
+    [self presentViewController:editor animated:YES completion:nil];
+}
+
 - (void)rescoverPreTakenENV {
     self.view.closeBtn.hidden = YES;
     self.view.operationPannelView.saveBtn.hidden = YES;
+    self.view.operationPannelView.editorBtn.hidden = YES;
     [[ECTakenManger single] restartSession];
 }
 
@@ -104,6 +121,14 @@ EC_DYNAMIC_VIEW(ECMainView);
     self.curPreviewLayer = [ECTakenManger single].previewLayer;
     [self.view.cameraPreviewView.layer addSublayer:self.curPreviewLayer];
     self.curPreviewLayer.frame = CGRectMake(0.f, 0.f, self.view.cameraPreviewWidth, self.view.cameraPreviewHeight);
+    
+    self.previewImgView = [UIImageView new];
+    [self.view.cameraPreviewView addSubview:self.previewImgView];
+    [self.previewImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view.cameraPreviewView);
+    }];
+    self.previewImgView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.view.cameraPreviewView sendSubviewToBack:self.previewImgView];
 }
 
 #pragma mark -- ECMediaTakenViewProtocol
@@ -161,8 +186,10 @@ EC_DYNAMIC_VIEW(ECMainView);
         }
         
         self.takenImg = img;
+        self.previewImgView.image = img;
+        [self.view.cameraPreviewView bringSubviewToFront:self.previewImgView];
         self.view.operationPannelView.saveBtn.hidden = NO;
-        [self.view.operationPannelView bringSubviewToFront:self.view.operationPannelView.saveBtn];
+        self.view.operationPannelView.editorBtn.hidden = NO;
         self.view.closeBtn.hidden = NO;
         [self.view bringSubviewToFront:self.view.closeBtn];
     }];
@@ -192,6 +219,29 @@ EC_DYNAMIC_VIEW(ECMainView);
     }
 }
 
+
+- (void)showPreImgView {
+    self.previewImgView.image = self.takenImg;
+    [self.view.cameraPreviewView bringSubviewToFront:self.previewImgView];
+}
+
+#pragma mark -- CLImageEditorDelegate
+
+- (void)imageEditor:(CLImageEditor*)editor didFinishEditingWithImage:(UIImage*)image {
+    NSLog(@"lt - image :%@",image);
+    
+    if (!image) return;
+    
+    self.takenImg = image;
+    [editor dismissViewControllerAnimated:YES completion:nil];
+    [self showPreImgView];
+}
+
+- (void)imageEditorDidCancel:(CLImageEditor*)editor {
+    NSLog(@"cancel editor; %@",editor);
+    [editor dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
 
 #import "ECPreviewRatioView.h"
@@ -205,9 +255,7 @@ EC_DYNAMIC_VIEW(ECMainView);
     });
 }
 
-
 @end
-
 
 @implementation ECMainViewController (MoreSettings)
 
@@ -295,8 +343,6 @@ EC_DYNAMIC_VIEW(ECMainView);
 - (void)onEditorWithImg:(UIImage *)originImg then:(ImgBlock)then {
     
 }
-
-
 
 @end
 
