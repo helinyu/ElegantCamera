@@ -113,6 +113,7 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
         _collectionView.hidden = YES;
     }
     
+    
     {
         _editorPhotoCtrl = [ECIconDescControl new];
         _filterCtrl = [ECIconDescControl new];
