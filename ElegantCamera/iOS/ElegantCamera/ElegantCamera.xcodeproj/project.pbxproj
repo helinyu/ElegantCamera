@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,8 +25,6 @@
 		415D842223701BED002F2DBB /* ECGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D842123701BED002F2DBB /* ECGradientView.m */; };
 		4172EBF42501E7C4002012AF /* LGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172EBF22501E7C3002012AF /* LGButton.m */; };
 		4172EBF52501E7C4002012AF /* JXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172EBF32501E7C3002012AF /* JXButton.m */; };
-		4172EBF825025F4A002012AF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4172EBF625025F49002012AF /* MobileCoreServices.framework */; };
-		4172EBF925025F4A002012AF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4172EBF725025F49002012AF /* CoreServices.framework */; };
 		4172EBFC250267BF002012AF /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172EBFB250267BF002012AF /* UIColor+Hex.m */; };
 		4172EC0725026AA3002012AF /* ECUserAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172EBFD25026AA2002012AF /* ECUserAgreementViewController.m */; };
 		4172EC0825026AA3002012AF /* ECWaterMarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4172EC0025026AA2002012AF /* ECWaterMarkViewController.m */; };
@@ -59,14 +57,11 @@
 		41E17447236AF66C00E6AA36 /* ElegantCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17446236AF66C00E6AA36 /* ElegantCameraUITests.m */; };
 		41E17459236BC71A00E6AA36 /* ECBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17458236BC71A00E6AA36 /* ECBaseViewController.m */; };
 		41E96AAD237ADFCD004DD031 /* ECBaseTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E96AAC237ADFCD004DD031 /* ECBaseTCell.m */; };
-		42DF6CE636D120E82F683734 /* Pods_ElegantCameraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AB16A52DCFB8A264564977 /* Pods_ElegantCameraTests.framework */; };
 		4AD347932502800100D7843C /* ECPreviewRatioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD347912502800100D7843C /* ECPreviewRatioView.m */; };
 		4AD347962502805700D7843C /* ECSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD347952502805700D7843C /* ECSettingsModel.m */; };
 		4AD347982502816400D7843C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD347972502816300D7843C /* main.m */; };
 		4AD3479E2502855E00D7843C /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3479C2502855D00D7843C /* UIView+YYAdd.m */; };
 		4AD347A2250285B300D7843C /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD347A0250285B200D7843C /* NSObject+YYAdd.m */; };
-		DACD714F0BF8A903CF94E3E4 /* Pods_ElegantCameraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DA222A6ED7594C5D0DC180 /* Pods_ElegantCameraUITests.framework */; };
-		FD501A1E859F9592F87D8F18 /* Pods_ElegantCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C635B9BA17BFD410A698A4B0 /* Pods_ElegantCamera.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,9 +82,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06DA222A6ED7594C5D0DC180 /* Pods_ElegantCameraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantCameraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		116988AD4658FCEC4314B853 /* Pods-ElegantCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCameraUITests.release.xcconfig"; path = "Target Support Files/Pods-ElegantCameraUITests/Pods-ElegantCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
-		33AB16A52DCFB8A264564977 /* Pods_ElegantCameraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantCameraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41584D862375476900191C37 /* WKBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBaseView.h; sourceTree = "<group>"; };
 		41584D872375476900191C37 /* WKBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseView.m; sourceTree = "<group>"; };
 		41584D882375476A00191C37 /* WKPopBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPopBaseView.h; sourceTree = "<group>"; };
@@ -132,8 +124,6 @@
 		4172EBF12501E7C3002012AF /* JXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXButton.h; sourceTree = "<group>"; };
 		4172EBF22501E7C3002012AF /* LGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGButton.m; sourceTree = "<group>"; };
 		4172EBF32501E7C3002012AF /* JXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXButton.m; sourceTree = "<group>"; };
-		4172EBF625025F49002012AF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		4172EBF725025F49002012AF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		4172EBFA250267BE002012AF /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		4172EBFB250267BF002012AF /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		4172EBFD25026AA2002012AF /* ECUserAgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECUserAgreementViewController.m; sourceTree = "<group>"; };
@@ -212,12 +202,6 @@
 		4AD3479F2502858D00D7843C /* YYKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
 		4AD347A0250285B200D7843C /* NSObject+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYAdd.m"; sourceTree = "<group>"; };
 		4AD347A1250285B300D7843C /* NSObject+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYAdd.h"; sourceTree = "<group>"; };
-		C5AC82C59CD17455D9651E90 /* Pods-ElegantCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCameraUITests.debug.xcconfig"; path = "Target Support Files/Pods-ElegantCameraUITests/Pods-ElegantCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C635B9BA17BFD410A698A4B0 /* Pods_ElegantCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9401CBD6E4EACED812083DA /* Pods-ElegantCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCamera.debug.xcconfig"; path = "Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera.debug.xcconfig"; sourceTree = "<group>"; };
-		D16B9E0D16AD4B1E5FCB8598 /* Pods-ElegantCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCameraTests.debug.xcconfig"; path = "Target Support Files/Pods-ElegantCameraTests/Pods-ElegantCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D3261DE4D208C06805F70B09 /* Pods-ElegantCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCamera.release.xcconfig"; path = "Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera.release.xcconfig"; sourceTree = "<group>"; };
-		F37F95393E7A03B7471E74AF /* Pods-ElegantCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantCameraTests.release.xcconfig"; path = "Target Support Files/Pods-ElegantCameraTests/Pods-ElegantCameraTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,9 +209,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD501A1E859F9592F87D8F18 /* Pods_ElegantCamera.framework in Frameworks */,
-				4172EBF925025F4A002012AF /* CoreServices.framework in Frameworks */,
-				4172EBF825025F4A002012AF /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +216,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DF6CE636D120E82F683734 /* Pods_ElegantCameraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,25 +223,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACD714F0BF8A903CF94E3E4 /* Pods_ElegantCameraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3078B183B979E7A2C54B2D40 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4172EBF725025F49002012AF /* CoreServices.framework */,
-				4172EBF625025F49002012AF /* MobileCoreServices.framework */,
-				C635B9BA17BFD410A698A4B0 /* Pods_ElegantCamera.framework */,
-				33AB16A52DCFB8A264564977 /* Pods_ElegantCameraTests.framework */,
-				06DA222A6ED7594C5D0DC180 /* Pods_ElegantCameraUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		41584D842375474F00191C37 /* Popview */ = {
 			isa = PBXGroup;
 			children = (
@@ -514,13 +481,6 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
-		41DE8F5E237D799F005F2D07 /* ThirtPart */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThirtPart;
-			sourceTree = "<group>";
-		};
 		41E17413236AF66900E6AA36 = {
 			isa = PBXGroup;
 			children = (
@@ -528,8 +488,6 @@
 				41E1743A236AF66C00E6AA36 /* ElegantCameraTests */,
 				41E17445236AF66C00E6AA36 /* ElegantCameraUITests */,
 				41E1741D236AF66900E6AA36 /* Products */,
-				45CB6507EA153BDACB59FA4E /* Pods */,
-				3078B183B979E7A2C54B2D40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -546,7 +504,6 @@
 		41E1741E236AF66900E6AA36 /* ElegantCamera */ = {
 			isa = PBXGroup;
 			children = (
-				41DE8F5E237D799F005F2D07 /* ThirtPart */,
 				41DE8F54237C3BD1005F2D07 /* WebView */,
 				419177FE237988D90081FD8B /* Settings */,
 				415D8411236FD1D7002F2DBB /* cateogry */,
@@ -555,7 +512,6 @@
 				415D83FA236FC296002F2DBB /* Macro */,
 				41E17463236BD15A00E6AA36 /* Main */,
 				41E1745A236BC71F00E6AA36 /* Base */,
-				41E17456236BC70200E6AA36 /* Camera */,
 				41E17454236AF69200E6AA36 /* ElegantCamera.entitlements */,
 				41E1742B236AF66C00E6AA36 /* Assets.xcassets */,
 				41E1742D236AF66C00E6AA36 /* LaunchScreen.storyboard */,
@@ -585,13 +541,6 @@
 				41E17448236AF66C00E6AA36 /* Info.plist */,
 			);
 			path = ElegantCameraUITests;
-			sourceTree = "<group>";
-		};
-		41E17456236BC70200E6AA36 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Camera;
 			sourceTree = "<group>";
 		};
 		41E1745A236BC71F00E6AA36 /* Base */ = {
@@ -630,19 +579,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		45CB6507EA153BDACB59FA4E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C9401CBD6E4EACED812083DA /* Pods-ElegantCamera.debug.xcconfig */,
-				D3261DE4D208C06805F70B09 /* Pods-ElegantCamera.release.xcconfig */,
-				D16B9E0D16AD4B1E5FCB8598 /* Pods-ElegantCameraTests.debug.xcconfig */,
-				F37F95393E7A03B7471E74AF /* Pods-ElegantCameraTests.release.xcconfig */,
-				C5AC82C59CD17455D9651E90 /* Pods-ElegantCameraUITests.debug.xcconfig */,
-				116988AD4658FCEC4314B853 /* Pods-ElegantCameraUITests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -650,11 +586,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E1744B236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCamera" */;
 			buildPhases = (
-				4E20B3022AB97CC160AEC874 /* [CP] Check Pods Manifest.lock */,
 				41E17418236AF66900E6AA36 /* Sources */,
 				41E17419236AF66900E6AA36 /* Frameworks */,
 				41E1741A236AF66900E6AA36 /* Resources */,
-				EBCEFD3C19EFFDDDBF444DFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -789,28 +723,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E20B3022AB97CC160AEC874 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ElegantCamera-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		91BF48968987E61CC1198F7D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -853,23 +765,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EBCEFD3C19EFFDDDBF444DFB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1088,7 +983,6 @@
 		};
 		41E1744C236AF66C00E6AA36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9401CBD6E4EACED812083DA /* Pods-ElegantCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ElegantCamera/ElegantCamera.entitlements;
@@ -1113,7 +1007,6 @@
 		};
 		41E1744D236AF66C00E6AA36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3261DE4D208C06805F70B09 /* Pods-ElegantCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ElegantCamera/ElegantCamera.entitlements;
@@ -1138,7 +1031,6 @@
 		};
 		41E1744F236AF66C00E6AA36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D16B9E0D16AD4B1E5FCB8598 /* Pods-ElegantCameraTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1159,7 +1051,6 @@
 		};
 		41E17450236AF66C00E6AA36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F37F95393E7A03B7471E74AF /* Pods-ElegantCameraTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1180,7 +1071,6 @@
 		};
 		41E17452236AF66C00E6AA36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5AC82C59CD17455D9651E90 /* Pods-ElegantCameraUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
@@ -1199,7 +1089,6 @@
 		};
 		41E17453236AF66C00E6AA36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 116988AD4658FCEC4314B853 /* Pods-ElegantCameraUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2XBEJ6876;
