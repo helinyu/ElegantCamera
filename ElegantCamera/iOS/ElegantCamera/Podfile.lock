@@ -5,7 +5,6 @@ PODS:
   - CocoaLumberjack (3.6.2):
     - CocoaLumberjack/Core (= 3.6.2)
   - CocoaLumberjack/Core (3.6.2)
-  - GPUImage (0.1.7)
   - LBXScan/LBXNative (2.5.1):
     - LBXScan/Types (~> 2.2)
   - LBXScan/Types (2.5.1)
@@ -46,7 +45,6 @@ PODS:
 DEPENDENCIES:
   - CLImageEditor (~> 0.2.4)
   - CocoaLumberjack
-  - GPUImage (~> 0.1.7)
   - LBXScan/LBXNative (~> 2.4)
   - LookinServer
   - Masonry (~> 1.1.0)
@@ -64,7 +62,6 @@ SPEC REPOS:
   trunk:
     - CLImageEditor
     - CocoaLumberjack
-    - GPUImage
     - LBXScan
     - libwebp
     - LookinServer
@@ -81,7 +78,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
   CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
-  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   LBXScan: 90ca10d0c38fb4a5a6980d7782354f3f69f50093
   libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
   LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
@@ -95,6 +91,6 @@ SPEC CHECKSUMS:
   WSProgressHUD: 8214e549869776514e8055527c590a109c025e3e
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 566bda21b2442fd0476d3a22ee2f29fc2f4adc2f
+PODFILE CHECKSUM: e470a049de20ce3e39561ee1749682ca340e56f2
 
 COCOAPODS: 1.9.3

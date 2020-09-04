@@ -9,7 +9,7 @@ target 'ElegantCamera' do
   pod 'SDWebImage'#,'~>3.8.2'
   pod 'SDWebImage/WebP'
   pod 'YYKit', '~> 1.0.9'
-  pod 'GPUImage', '~> 0.1.7'
+#  pod 'GPUImage'
   pod 'CocoaLumberjack'
   pod "ReactiveCocoa", "~> 2.5"
   pod "Shimmer"
@@ -24,7 +24,6 @@ target 'ElegantCamera' do
   
   pod "Shimmer"
   pod "WSProgressHUD"
-  
   
   pod 'LookinServer', :configurations => ['Debug']
   pod 'OCMock', :configurations => ['Debug']

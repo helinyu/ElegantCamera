@@ -1,0 +1,1 @@
+/tmp/ElegantCamera.dst/Applications/酷拍.app
