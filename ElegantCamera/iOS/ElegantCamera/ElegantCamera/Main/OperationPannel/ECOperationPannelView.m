@@ -219,6 +219,7 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
         [saveBtn setImage:[UIImage imageNamed:@"icon_save30"] forState:UIControlStateNormal];
         [saveBtn addTarget:self action:@selector(onCtrlAction:) forControlEvents:UIControlEventTouchUpInside];
         saveBtn.tag = ECMainPhotoTypeSavePhoto;
+        saveBtn.hidden = YES;
     }
     
     

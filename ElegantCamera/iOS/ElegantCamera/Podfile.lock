@@ -34,6 +34,8 @@ PODS:
     - SDWebImage/Core
   - Shimmer (1.0.2)
   - TZImagePickerController (3.4.2)
+  - WSProgressHUD (1.1.5):
+    - Shimmer
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -51,6 +53,7 @@ DEPENDENCIES:
   - SDWebImage/WebP
   - Shimmer
   - TZImagePickerController
+  - WSProgressHUD
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
@@ -67,6 +70,7 @@ SPEC REPOS:
     - SDWebImage
     - Shimmer
     - TZImagePickerController
+    - WSProgressHUD
     - YYKit
 
 SPEC CHECKSUMS:
@@ -82,8 +86,9 @@ SPEC CHECKSUMS:
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
+  WSProgressHUD: 8214e549869776514e8055527c590a109c025e3e
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 484036d36041f7057c6bd5a003edeadcf6909ed0
+PODFILE CHECKSUM: f57f484c45b4cce15571766766536a6dd08b7126
 
 COCOAPODS: 1.9.3

@@ -13,10 +13,14 @@ target 'ElegantCamera' do
   pod 'CocoaLumberjack'
   pod "ReactiveCocoa", "~> 2.5"
   pod "Shimmer"
-#  pod 'TZImagePickerController', '~> 3.2.7'
-    pod 'TZImagePickerController'
+  #  pod 'TZImagePickerController', '~> 3.2.7'
+  pod 'TZImagePickerController'
   pod 'MMKV', '~> 1.0.23'
   pod 'LBXScan/LBXNative','~> 2.4'
+  
+  pod "Shimmer"
+  pod "WSProgressHUD"
+
   
   pod 'LookinServer', :configurations => ['Debug']
   pod 'OCMock', :configurations => ['Debug']

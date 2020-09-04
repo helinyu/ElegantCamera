@@ -536,8 +536,8 @@
 			isa = PBXGroup;
 			children = (
 				4172EBF02501E7C3002012AF /* LGButton.h */,
-				4172EBF12501E7C3002012AF /* JXButton.h */,
 				4172EBF22501E7C3002012AF /* LGButton.m */,
+				4172EBF12501E7C3002012AF /* JXButton.h */,
 				4172EBF32501E7C3002012AF /* JXButton.m */,
 			);
 			path = Button;

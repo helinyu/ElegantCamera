@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class ECMediaTakenView;
-
+@class LGButton;
 
 typedef NS_ENUM(NSUInteger, ECMainPhotoType) {
     ECMainPhotoTypeEditorPhoto =0,
@@ -28,6 +28,8 @@ typedef NS_ENUM(NSUInteger, ECMainPhotoType) {
 @property (nonatomic, strong, readonly) ECMediaTakenView *takenView;
 
 @property (nonatomic, weak) id<ECActionProtocol> pannelDelegate;
+
+@property (nonatomic, strong, readonly) LGButton *saveBtn;
 
 - (void)changeToCurIndex;
 

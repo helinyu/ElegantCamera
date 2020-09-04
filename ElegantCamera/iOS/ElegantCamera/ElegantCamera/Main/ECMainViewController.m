@@ -18,7 +18,7 @@
 #import "ECSettingsViewController.h"
 
 #import "ECTakenManger.h"
-
+#import "LGButton.h"
 #import "DDLog+LOGV.h"
 
 @interface ECMainViewController ()<ECMediaTakenViewProtocol>
@@ -42,8 +42,6 @@ EC_DYNAMIC_VIEW(ECMainView);
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.hidden = YES;
-    
-    NSLog(@"lt - hre ;");
     
 }
 
@@ -129,6 +127,11 @@ EC_DYNAMIC_VIEW(ECMainView);
 - (void)takePhoto {
     [[ECTakenManger single] takePhoto:^(UIImage *img, NSError *error) {
         NSLog(@"lt- take photo :%@",error);
+        if (error != nil) {
+            ;
+            return;
+        }
+
     }];
 }
 
@@ -138,6 +141,7 @@ EC_DYNAMIC_VIEW(ECMainView);
 
 - (void)onChangeMainCategory:(NSInteger)categoryIndex {
     if (categoryIndex == ECMainPhotoTypeEditorPhoto) {
+        W_S;
         [self onGetEditorImageThen:^(UIImage *img) {
            if (img) {
                NSLog(@"lt- img ");
