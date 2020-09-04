@@ -1,1 +1,0 @@
-/tmp/ElegantCamera.dst/Applications/玩拍.app

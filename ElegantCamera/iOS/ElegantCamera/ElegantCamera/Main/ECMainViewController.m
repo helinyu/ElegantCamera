@@ -16,13 +16,13 @@
 #import "ECOperationPannelView.h"
 #import "ECCameraSettingsMoreView.h"
 #import "ECSettingsViewController.h"
-#import <WSProgressHUD/WSProgressHUD.h>
 #import "ECTakenManger.h"
 #import "LGButton.h"
-#import "DDLog+LOGV.h"
-#import "CLImageEditor.h"
+//#import <DDLog+LOGV.h>
+//#import "CLImageEditor.h"
+//#import <CLImageEditor.h>
 
-@interface ECMainViewController ()<ECMediaTakenViewProtocol, CLImageEditorDelegate>
+@interface ECMainViewController ()<ECMediaTakenViewProtocol>
 
 @property (nonatomic, strong) ECMainView *view;
 
@@ -53,8 +53,8 @@ EC_DYNAMIC_VIEW(ECMainView);
     [[ECTakenManger single] requestAuthorization:^(BOOL flag) {
         dispatch_async_on_main_queue(^{
             if (!flag) {
-                 return ;
-             }
+                return ;
+            }
             [self configViewAndVariables];
         });
     }];
@@ -99,10 +99,10 @@ EC_DYNAMIC_VIEW(ECMainView);
 }
 
 - (void)onEditorAction:(id)sender {
-    CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:self.takenImg];
-    editor.delegate = self;
-    
-    [self presentViewController:editor animated:YES completion:nil];
+//    CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:self.takenImg];
+//    editor.delegate = self;
+//
+//    [self presentViewController:editor animated:YES completion:nil];
 }
 
 - (void)onAlbumAction:(id)sender {
@@ -201,17 +201,12 @@ EC_DYNAMIC_VIEW(ECMainView);
 - (void)takePhoto {
     [[ECTakenManger single] takePhoto:^(UIImage *img, NSError *error) {
         if (error != nil) {
-//            [WSProgressHUD showWithStatus:@"拍照失败" maskType:WSProgressHUDMaskTypeClear maskWithout:WSProgressHUDMaskWithoutDefault];
+            //            [WSProgressHUD showWithStatus:@"拍照失败" maskType:WSProgressHUDMaskTypeClear maskWithout:WSProgressHUDMaskWithoutDefault];
             return;
         }
         
         self.takenImg = img;
-        self.previewImgView.image = img;
-        [self.view.cameraPreviewView bringSubviewToFront:self.previewImgView];
-        self.view.operationPannelView.saveBtn.hidden = NO;
-        self.view.operationPannelView.editorBtn.hidden = NO;
-        self.view.closeBtn.hidden = NO;
-        [self.view bringSubviewToFront:self.view.closeBtn];
+        [self showPreImgView];
     }];
 }
 
@@ -223,13 +218,13 @@ EC_DYNAMIC_VIEW(ECMainView);
     if (categoryIndex == ECMainPhotoTypeEditorPhoto) {
         W_S;
         [self onGetEditorImageThen:^(UIImage *img) {
-           if (img) {
-               NSLog(@"lt- img ");
-           }
-       }];
+            if (img) {
+                NSLog(@"lt- img ");
+            }
+        }];
     }
     else if (categoryIndex == ECMainPhotoTypeBeauty) {
-       
+        
     }
     else if (categoryIndex == ECMainPhotoTypeSticker) {
         
@@ -241,26 +236,31 @@ EC_DYNAMIC_VIEW(ECMainView);
 
 
 - (void)showPreImgView {
+    
     self.previewImgView.image = self.takenImg;
     [self.view.cameraPreviewView bringSubviewToFront:self.previewImgView];
+    self.view.operationPannelView.saveBtn.hidden = NO;
+    self.view.operationPannelView.editorBtn.hidden = NO;
+    self.view.closeBtn.hidden = NO;
+    [self.view bringSubviewToFront:self.view.closeBtn];
 }
 
 #pragma mark -- CLImageEditorDelegate
 
-- (void)imageEditor:(CLImageEditor*)editor didFinishEditingWithImage:(UIImage*)image {
-    NSLog(@"lt - image :%@",image);
-    
-    if (!image) return;
-    
-    self.takenImg = image;
-    [editor dismissViewControllerAnimated:YES completion:nil];
-    [self showPreImgView];
-}
-
-- (void)imageEditorDidCancel:(CLImageEditor*)editor {
-    NSLog(@"cancel editor; %@",editor);
-    [editor dismissViewControllerAnimated:YES completion:nil];
-}
+//- (void)imageEditor:(CLImageEditor*)editor didFinishEditingWithImage:(UIImage*)image {
+//    NSLog(@"lt - image :%@",image);
+//
+//    if (!image) return;
+//
+//    self.takenImg = image;
+//    [editor dismissViewControllerAnimated:YES completion:nil];
+//    [self showPreImgView];
+//}
+//
+//- (void)imageEditorDidCancel:(CLImageEditor*)editor {
+//    NSLog(@"cancel editor; %@",editor);
+//    [editor dismissViewControllerAnimated:YES completion:nil];
+//}
 
 @end
 
@@ -301,13 +301,13 @@ EC_DYNAMIC_VIEW(ECMainView);
 @implementation ECMainViewController (EditorPhoto) 
 
 - (void)onGetEditorImageThen:(ImgBlock)then {
-//     这个编辑好像有问题
+    //     这个编辑好像有问题
     TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:9 delegate:self];
-
+    
     // You can get the photos by block, the same as by delegate.
     // 你可以通过block或者代理，来得到用户选择的照片.
     [imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
-
+        
     }];
     [self presentViewController:imagePickerVc animated:YES completion:nil];
 }
@@ -358,12 +358,12 @@ EC_DYNAMIC_VIEW(ECMainView);
 @end
 
 
-@implementation ECMainViewController (WBGImageEditor)
-
-- (void)onEditorWithImg:(UIImage *)originImg then:(ImgBlock)then {
-    
-}
-
-@end
+//@implementation ECMainViewController (WBGImageEditor)
+//
+//- (void)onEditorWithImg:(UIImage *)originImg then:(ImgBlock)then {
+//
+//}
+//
+//@end
 
 

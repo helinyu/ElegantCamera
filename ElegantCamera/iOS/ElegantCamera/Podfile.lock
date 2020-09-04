@@ -2,12 +2,6 @@ PODS:
   - CLImageEditor (0.2.4):
     - CLImageEditor/Core (= 0.2.4)
   - CLImageEditor/Core (0.2.4)
-  - CocoaLumberjack (3.6.2):
-    - CocoaLumberjack/Core (= 3.6.2)
-  - CocoaLumberjack/Core (3.6.2)
-  - LBXScan/LBXNative (2.5.1):
-    - LBXScan/Types (~> 2.2)
-  - LBXScan/Types (2.5.1)
   - libwebp (1.1.0):
     - libwebp/demux (= 1.1.0)
     - libwebp/mux (= 1.1.0)
@@ -20,7 +14,6 @@ PODS:
   - LookinServer (1.0.0)
   - Masonry (1.1.0)
   - MMKV (1.0.24)
-  - OCMock (3.7.1)
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
@@ -29,62 +22,58 @@ PODS:
     - SDWebImage/Core
   - Shimmer (1.0.2)
   - TZImagePickerController (3.4.2)
-  - WSProgressHUD (1.1.5):
-    - Shimmer
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
-  - ZMJImageEditor (0.1.4):
-    - YYCategories (~> 1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - CLImageEditor (~> 0.2.4)
-  - CocoaLumberjack
-  - LBXScan/LBXNative (~> 2.4)
   - LookinServer
   - Masonry (~> 1.1.0)
   - MMKV (~> 1.0.23)
-  - OCMock
   - SDWebImage
   - SDWebImage/WebP
   - Shimmer
   - TZImagePickerController
-  - WSProgressHUD
-  - ZMJImageEditor
+  - YYCategories
+  - YYImage
+  - YYModel
+  - YYText
 
 SPEC REPOS:
   trunk:
     - CLImageEditor
-    - CocoaLumberjack
-    - LBXScan
     - libwebp
     - LookinServer
     - Masonry
     - MMKV
-    - OCMock
     - SDWebImage
     - Shimmer
     - TZImagePickerController
-    - WSProgressHUD
     - YYCategories
-    - ZMJImageEditor
+    - YYImage
+    - YYModel
+    - YYText
 
 SPEC CHECKSUMS:
   CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
-  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
-  LBXScan: 90ca10d0c38fb4a5a6980d7782354f3f69f50093
   libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
   LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 758b2edee46b08bdd958db4169191afb9a6d4ebd
-  OCMock: 75fbeaa46a9b11f8c182bbb1d1f7e9a35ccc9955
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
-  WSProgressHUD: 8214e549869776514e8055527c590a109c025e3e
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
-  ZMJImageEditor: 144cdb63129c85156bb0b548b4832ee51296f046
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: db8ad43031408a649d6d6e53778a2fc7e0f6a41e
+PODFILE CHECKSUM: c275ff30cdb15042f0b12bb1db70634dc6e3ccb0
 
 COCOAPODS: 1.9.3

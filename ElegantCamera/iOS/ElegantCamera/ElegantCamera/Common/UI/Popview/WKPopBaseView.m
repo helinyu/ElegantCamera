@@ -8,8 +8,8 @@
 
 #import "WKPopBaseView.h"
 #import "NSObject+WKKeyboardIsShow.h"
-#import "WSProgressHUD.h"
-#import <UIView+YYAdd.h>
+#import "UIView+YYAdd.h"
+#import "NSObject+YYAdd.h"
 
 @interface WKPopBaseView ()
 
@@ -37,7 +37,7 @@
 -(void)showInView:(UIView *)view isShow:(BOOL)flag
 {
     [super showInView:view isShow:flag];
-    [WSProgressHUD dismiss]; //解解pop冲突
+//    [WSProgressHUD dismiss]; //解解pop冲突
 }
 
 

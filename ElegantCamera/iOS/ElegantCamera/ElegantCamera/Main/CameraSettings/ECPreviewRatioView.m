@@ -55,7 +55,7 @@ static CGFloat const kLineWidth = 1.f;
     _ratio3_4Ctrl = [ECIconDescControl new];
     _ratio1_1Ctrl = [ECIconDescControl new];
     _circleCtrl = [ECIconDescControl new];
-
+    
     
     _rightLineView = [UIButton buttonWithType:UIButtonTypeCustom];
     _multiSquaredCtrl = [ECIconDescControl new];
@@ -76,7 +76,7 @@ static CGFloat const kLineWidth = 1.f;
         make.centerY.equalTo(self.smallBoxCtrl);
     }];
     _leftLineView.backgroundColor = kRGB_DD;
-
+    
     [_ratio9_16Ctrl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.leftLineView.mas_right).offset(KMWidth((kLineTotalWidth-1)/2.f));
         make.width.mas_equalTo(KMWidth(kBtnItemWidth));
@@ -85,18 +85,18 @@ static CGFloat const kLineWidth = 1.f;
     [_ratio9_16Ctrl configIconName:@"icon_little_box_btn" desc:@"9:16"];
     
     [_ratio3_4Ctrl mas_makeConstraints:^(MASConstraintMaker *make) {
-       make.left.equalTo(self.ratio9_16Ctrl.mas_right);
-       make.width.mas_equalTo(KMWidth(kBtnItemWidth));
-       make.bottom.top.equalTo(self.contentView);
+        make.left.equalTo(self.ratio9_16Ctrl.mas_right);
+        make.width.mas_equalTo(KMWidth(kBtnItemWidth));
+        make.bottom.top.equalTo(self.contentView);
     }];
-   [_ratio3_4Ctrl configIconName:@"icon_little_box_btn" desc:@"3:4"];
+    [_ratio3_4Ctrl configIconName:@"icon_little_box_btn" desc:@"3:4"];
     
     [_ratio1_1Ctrl mas_makeConstraints:^(MASConstraintMaker *make) {
-         make.left.equalTo(self.ratio3_4Ctrl.mas_right);
-         make.width.mas_equalTo(KMWidth(kBtnItemWidth));
-         make.bottom.top.equalTo(self.contentView);
-      }];
-     [_ratio1_1Ctrl configIconName:@"icon_little_box_btn" desc:@"1:1"];
+        make.left.equalTo(self.ratio3_4Ctrl.mas_right);
+        make.width.mas_equalTo(KMWidth(kBtnItemWidth));
+        make.bottom.top.equalTo(self.contentView);
+    }];
+    [_ratio1_1Ctrl configIconName:@"icon_little_box_btn" desc:@"1:1"];
     
     [_circleCtrl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.ratio1_1Ctrl.mas_right);
@@ -104,7 +104,7 @@ static CGFloat const kLineWidth = 1.f;
         make.bottom.top.equalTo(self.contentView);
     }];
     [_circleCtrl configIconName:@"icon_little_box_btn" desc:@"圆形"];
-
+    
     [_rightLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.circleCtrl.mas_right).offset(KMWidth((kLineTotalWidth-1)/2.f));
         make.width.mas_equalTo(1.f);
@@ -114,11 +114,11 @@ static CGFloat const kLineWidth = 1.f;
     _rightLineView.backgroundColor = kRGB_DD;
     
     [_multiSquaredCtrl mas_makeConstraints:^(MASConstraintMaker *make) {
-         make.left.equalTo(self.rightLineView.mas_right).offset(KMWidth((kLineTotalWidth-1)/2.f));
-         make.width.mas_equalTo(KMWidth(kBtnItemWidth));
-         make.bottom.top.equalTo(self.contentView);
-     }];
-     [_multiSquaredCtrl configIconName:@"icon_little_box_btn" desc:@"多格"];
+        make.left.equalTo(self.rightLineView.mas_right).offset(KMWidth((kLineTotalWidth-1)/2.f));
+        make.width.mas_equalTo(KMWidth(kBtnItemWidth));
+        make.bottom.top.equalTo(self.contentView);
+    }];
+    [_multiSquaredCtrl configIconName:@"icon_little_box_btn" desc:@"多格"];
     
 }
 

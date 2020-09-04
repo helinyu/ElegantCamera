@@ -9,7 +9,7 @@
 #import "WKViewManager.h"
 #import "AppDelegate+visableVC.h"
 #import "NSMutableArray+ECAdd.h"
-#import <NSObject+YYAdd.h>
+#import "NSObject+YYAdd.h"
 ///黑名单中，对应的键包含这个则表明对应的vc不显示任何wkbaseview的基类
 static const NSString * const WK_AllViewNickName = @"WKBaseViewAllNotAllowed";
 
