@@ -19,6 +19,8 @@ typedef NS_ENUM(NSUInteger, ECCameraSettingsType) {
 
 @interface ECCameraSettingsView : ECBaseView
 
+@property (nonatomic, strong, readonly) UIButton *toggleCameraBtn;
+
 @property (nonatomic, weak) id<ECActionProtocol> cameraSettingsDelegate;
 
 @end

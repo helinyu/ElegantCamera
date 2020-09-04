@@ -128,6 +128,7 @@ EC_DYNAMIC_VIEW(ECMainView);
 }
 
 - (void)rescoverPreTakenENV {
+    self.view.cameraSettingsView.hidden = NO;
     self.view.closeBtn.hidden = YES;
     self.view.operationPannelView.saveBtn.hidden = YES;
     self.view.operationPannelView.editorBtn.hidden = YES;
@@ -243,6 +244,7 @@ EC_DYNAMIC_VIEW(ECMainView);
     self.view.operationPannelView.editorBtn.hidden = NO;
     self.view.closeBtn.hidden = NO;
     [self.view bringSubviewToFront:self.view.closeBtn];
+    self.view.cameraSettingsView.toggleCameraBtn.hidden = YES;
 }
 
 #pragma mark -- CLImageEditorDelegate
