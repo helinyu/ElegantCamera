@@ -273,7 +273,7 @@
 		41DE8FBB237D79B1005F2D07 /* EditImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EditImage.xcassets; sourceTree = "<group>"; };
 		41DE8FBC237D79B1005F2D07 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		41DE8FBE237D79B1005F2D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WBGImageEditorViewController.xib; sourceTree = "<group>"; };
-		41E1741C236AF66900E6AA36 /* 酷拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "酷拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E1741C236AF66900E6AA36 /* 玩拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "玩拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E1741F236AF66900E6AA36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41E17420236AF66900E6AA36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		41E17422236AF66900E6AA36 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -756,7 +756,7 @@
 		41E1741D236AF66900E6AA36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41E1741C236AF66900E6AA36 /* 酷拍.app */,
+				41E1741C236AF66900E6AA36 /* 玩拍.app */,
 				41E17437236AF66C00E6AA36 /* ElegantCameraTests.xctest */,
 				41E17442236AF66C00E6AA36 /* ElegantCameraUITests.xctest */,
 			);
@@ -882,7 +882,7 @@
 			);
 			name = ElegantCamera;
 			productName = ElegantCamera;
-			productReference = 41E1741C236AF66900E6AA36 /* 酷拍.app */;
+			productReference = 41E1741C236AF66900E6AA36 /* 玩拍.app */;
 			productType = "com.apple.product-type.application";
 		};
 		41E17436236AF66C00E6AA36 /* ElegantCameraTests */ = {
@@ -1374,7 +1374,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.comic.ismh;
-				PRODUCT_NAME = "酷拍";
+				PRODUCT_NAME = "玩拍";
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1398,7 +1398,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.comic.ismh;
-				PRODUCT_NAME = "酷拍";
+				PRODUCT_NAME = "玩拍";
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

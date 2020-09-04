@@ -9,9 +9,9 @@ target 'ElegantCamera' do
   pod 'SDWebImage'#,'~>3.8.2'
   pod 'SDWebImage/WebP'
   pod 'YYKit', '~> 1.0.9'
-#  pod 'GPUImage'
+#  pod 'GPUImage' # 要替换成为metal 但是两个都需要去了解
   pod 'CocoaLumberjack'
-  pod "ReactiveCocoa", "~> 2.5"
+#  pod "ReactiveCocoa", "~> 2.5"
   pod "Shimmer"
   #  pod 'TZImagePickerController', '~> 3.2.7'
   pod 'TZImagePickerController'

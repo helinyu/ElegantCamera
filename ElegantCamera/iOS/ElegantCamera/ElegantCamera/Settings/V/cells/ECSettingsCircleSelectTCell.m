@@ -35,12 +35,13 @@
         make.edges.equalTo(self.circleImgView);
     }];
     
-    W_S;
-    [[_circleBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        if ([weakSelf.actionDelegate respondsToSelector:@selector(obj:actionWithParams:)]) {
-            [weakSelf.actionDelegate obj:self actionWithParams:nil];
-        }
-    }];
+    [_circleBtn addTarget:self action:@selector(onCircleAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onCircleAction:(id)sender {
+    if ([self.actionDelegate respondsToSelector:@selector(obj:actionWithParams:)]) {
+        [self.actionDelegate obj:self actionWithParams:nil];
+    }
 }
 
 - (void)setItem:(ECSettingsModel *)item {

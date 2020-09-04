@@ -15,7 +15,7 @@
 #import "ColorMacroDefine.h"
 #import "XN_CTViewConstants.h"
 #import "XNCommonBlock.h"
-#import <ReactiveCocoa.h>
+//#import <ReactiveCocoa.h>
 #import <Masonry.h>
 #import "ECBaseView.h"
 #import "ECActionProtocol.h"

@@ -26,12 +26,13 @@
         make.right.equalTo(self.contentView).offset(-KMWidth(20.f));
     }];
     
-    W_S;
-    [[_switchControl rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        if ([weakSelf.actionDelegate respondsToSelector:@selector(obj:actionWithParams:)]) {
-            [weakSelf.actionDelegate obj:self actionWithParams:nil];
-        }
-    }];
+    [_switchControl addTarget:self action:@selector(onSwitchAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onSwitchAction:(id)sender {
+    if ([self.actionDelegate respondsToSelector:@selector(obj:actionWithParams:)]) {
+        [self.actionDelegate obj:self actionWithParams:nil];
+    }
 }
 
 - (void)setItem:(ECSettingsModel *)item {
