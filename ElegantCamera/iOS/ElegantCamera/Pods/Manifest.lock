@@ -3,6 +3,9 @@ PODS:
     - CocoaLumberjack/Core (= 3.6.2)
   - CocoaLumberjack/Core (3.6.2)
   - GPUImage (0.1.7)
+  - LBXScan/LBXNative (2.5.1):
+    - LBXScan/Types (~> 2.2)
+  - LBXScan/Types (2.5.1)
   - libwebp (1.1.0):
     - libwebp/demux (= 1.1.0)
     - libwebp/mux (= 1.1.0)
@@ -14,6 +17,7 @@ PODS:
   - libwebp/webp (1.1.0)
   - LookinServer (1.0.0)
   - Masonry (1.1.0)
+  - MMKV (1.0.24)
   - OCMock (3.7.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -37,8 +41,10 @@ PODS:
 DEPENDENCIES:
   - CocoaLumberjack
   - GPUImage (~> 0.1.7)
+  - LBXScan/LBXNative (~> 2.4)
   - LookinServer
   - Masonry (~> 1.1.0)
+  - MMKV (~> 1.0.23)
   - OCMock
   - ReactiveCocoa (~> 2.5)
   - SDWebImage
@@ -51,9 +57,11 @@ SPEC REPOS:
   trunk:
     - CocoaLumberjack
     - GPUImage
+    - LBXScan
     - libwebp
     - LookinServer
     - Masonry
+    - MMKV
     - OCMock
     - ReactiveCocoa
     - SDWebImage
@@ -64,9 +72,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  LBXScan: 90ca10d0c38fb4a5a6980d7782354f3f69f50093
   libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
   LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MMKV: 758b2edee46b08bdd958db4169191afb9a6d4ebd
   OCMock: 75fbeaa46a9b11f8c182bbb1d1f7e9a35ccc9955
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
@@ -74,6 +84,6 @@ SPEC CHECKSUMS:
   TZImagePickerController: 1f92968aa0e98a06b9e2eccca8560acc19254257
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 8d93206a4832a4cd1e98a9f886fa895166a72c71
+PODFILE CHECKSUM: 0dfcd2f8ce3e08be1cfe6f2b4acbc1152d06d6bd
 
 COCOAPODS: 1.9.3
