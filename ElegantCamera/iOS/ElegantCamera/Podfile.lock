@@ -1,7 +1,11 @@
 PODS:
+  - CLImageEditor (0.2.4):
+    - CLImageEditor/Core (= 0.2.4)
+  - CLImageEditor/Core (0.2.4)
   - CocoaLumberjack (3.6.2):
     - CocoaLumberjack/Core (= 3.6.2)
   - CocoaLumberjack/Core (3.6.2)
+  - FBRetainCycleDetector (0.1.4)
   - GPUImage (0.1.7)
   - LBXScan/LBXNative (2.5.1):
     - LBXScan/Types (~> 2.2)
@@ -17,6 +21,8 @@ PODS:
   - libwebp/webp (1.1.0)
   - LookinServer (1.0.0)
   - Masonry (1.1.0)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
   - MMKV (1.0.24)
   - OCMock (3.7.1)
   - ReactiveCocoa (2.5):
@@ -36,16 +42,23 @@ PODS:
   - TZImagePickerController (3.4.2)
   - WSProgressHUD (1.1.5):
     - Shimmer
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
+  - ZMJImageEditor (0.1.4):
+    - YYCategories (~> 1.0.4)
 
 DEPENDENCIES:
+  - CLImageEditor (~> 0.2.4)
   - CocoaLumberjack
   - GPUImage (~> 0.1.7)
   - LBXScan/LBXNative (~> 2.4)
   - LookinServer
   - Masonry (~> 1.1.0)
+  - MLeaksFinder (~> 1.0.0)
   - MMKV (~> 1.0.23)
   - OCMock
   - ReactiveCocoa (~> 2.5)
@@ -55,15 +68,19 @@ DEPENDENCIES:
   - TZImagePickerController
   - WSProgressHUD
   - YYKit (~> 1.0.9)
+  - ZMJImageEditor
 
 SPEC REPOS:
   trunk:
+    - CLImageEditor
     - CocoaLumberjack
+    - FBRetainCycleDetector
     - GPUImage
     - LBXScan
     - libwebp
     - LookinServer
     - Masonry
+    - MLeaksFinder
     - MMKV
     - OCMock
     - ReactiveCocoa
@@ -71,15 +88,20 @@ SPEC REPOS:
     - Shimmer
     - TZImagePickerController
     - WSProgressHUD
+    - YYCategories
     - YYKit
+    - ZMJImageEditor
 
 SPEC CHECKSUMS:
+  CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
   CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   LBXScan: 90ca10d0c38fb4a5a6980d7782354f3f69f50093
   libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
   LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   MMKV: 758b2edee46b08bdd958db4169191afb9a6d4ebd
   OCMock: 75fbeaa46a9b11f8c182bbb1d1f7e9a35ccc9955
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
@@ -87,8 +109,10 @@ SPEC CHECKSUMS:
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
   WSProgressHUD: 8214e549869776514e8055527c590a109c025e3e
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZMJImageEditor: 144cdb63129c85156bb0b548b4832ee51296f046
 
-PODFILE CHECKSUM: f57f484c45b4cce15571766766536a6dd08b7126
+PODFILE CHECKSUM: 3fb8027aaa7e8b8b73647415d77e2b8ada18de4d
 
 COCOAPODS: 1.9.3

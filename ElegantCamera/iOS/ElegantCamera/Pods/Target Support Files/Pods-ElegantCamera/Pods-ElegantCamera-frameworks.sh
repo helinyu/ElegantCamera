@@ -197,10 +197,13 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework"
   install_framework "${PODS_ROOT}/LookinServer/LookinServer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework"
@@ -209,13 +212,18 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Shimmer/Shimmer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WSProgressHUD/WSProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZMJImageEditor/ZMJImageEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMKV/MMKV.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework"
@@ -223,7 +231,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Shimmer/Shimmer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WSProgressHUD/WSProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZMJImageEditor/ZMJImageEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

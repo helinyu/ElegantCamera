@@ -18,9 +18,13 @@ target 'ElegantCamera' do
   pod 'MMKV', '~> 1.0.23'
   pod 'LBXScan/LBXNative','~> 2.4'
   
+  pod 'CLImageEditor', '~> 0.2.4'
+  pod 'MLeaksFinder', '~> 1.0.0'
+  pod 'ZMJImageEditor'
+  
   pod "Shimmer"
   pod "WSProgressHUD"
-
+  
   
   pod 'LookinServer', :configurations => ['Debug']
   pod 'OCMock', :configurations => ['Debug']
@@ -29,10 +33,10 @@ target 'ElegantCamera' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
   target 'ElegantCameraUITests' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
 end
