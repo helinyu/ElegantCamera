@@ -185,7 +185,12 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
         }
     }
     
-    [self configViewWithTakenFlag:NO];
+//    [self configViewWithTakenFlag:NO];
+    
+//FIXME: next time to fix me
+    self.filterCtrl.hidden = YES;
+    self.beautyCtrl.hidden = YES;
+    self.stickerCtrl.hidden = YES;
     
 }
 

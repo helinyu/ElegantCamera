@@ -6,14 +6,18 @@ target 'ElegantCamera' do
   use_frameworks!
 
   pod 'Masonry', '~> 1.1.0'
+  pod 'SDWebImage'#,'~>3.8.2'
+  pod 'SDWebImage/WebP'
   pod 'YYKit', '~> 1.0.9'
   pod 'GPUImage', '~> 0.1.7'  
-  pod 'LookinServer', '~> 1.0.0'
   pod 'CocoaLumberjack'
   pod "ReactiveCocoa", "~> 2.5"
   pod "Shimmer"
   pod 'TZImagePickerController', '~> 3.2.7'
   # Pods for ElegantCamera
+  
+  pod 'LookinServer', :configurations => ['Debug']
+  pod 'OCMock', :configurations => ['Debug']
 
   target 'ElegantCameraTests' do
     inherit! :search_paths

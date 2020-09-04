@@ -67,6 +67,9 @@ static CGFloat  const selfHeight = 60.f;
     [_moreBtn addTarget:self action:@selector(onBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [_previewAreaBtn addTarget:self action:@selector(onBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [_toggleCameraBtn addTarget:self action:@selector(onBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.moreBtn.hidden = YES;
+    self.previewAreaBtn.hidden = YES;
 }
 
 

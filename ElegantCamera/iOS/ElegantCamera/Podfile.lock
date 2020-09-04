@@ -1,10 +1,20 @@
 PODS:
-  - CocoaLumberjack (3.6.0):
-    - CocoaLumberjack/Core (= 3.6.0)
-  - CocoaLumberjack/Core (3.6.0)
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
   - GPUImage (0.1.7)
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
+    - libwebp/webp
+  - libwebp/mux (1.1.0):
+    - libwebp/demux
+  - libwebp/webp (1.1.0)
   - LookinServer (1.0.0)
   - Masonry (1.1.0)
+  - OCMock (3.7.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -12,8 +22,14 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/WebP (4.4.8):
+    - libwebp (< 2.0, >= 0.5)
+    - SDWebImage/Core
   - Shimmer (1.0.2)
-  - TZImagePickerController (3.2.7)
+  - TZImagePickerController (3.2.9)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -21,9 +37,12 @@ PODS:
 DEPENDENCIES:
   - CocoaLumberjack
   - GPUImage (~> 0.1.7)
-  - LookinServer (~> 1.0.0)
+  - LookinServer
   - Masonry (~> 1.1.0)
+  - OCMock
   - ReactiveCocoa (~> 2.5)
+  - SDWebImage
+  - SDWebImage/WebP
   - Shimmer
   - TZImagePickerController (~> 3.2.7)
   - YYKit (~> 1.0.9)
@@ -32,23 +51,29 @@ SPEC REPOS:
   trunk:
     - CocoaLumberjack
     - GPUImage
+    - libwebp
     - LookinServer
     - Masonry
+    - OCMock
     - ReactiveCocoa
+    - SDWebImage
     - Shimmer
     - TZImagePickerController
     - YYKit
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
   LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OCMock: 75fbeaa46a9b11f8c182bbb1d1f7e9a35ccc9955
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
-  TZImagePickerController: 821b81f83594a736e831a018f2a2ce31822ddf0b
+  TZImagePickerController: 1f92968aa0e98a06b9e2eccca8560acc19254257
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 83a008333c4ffa51aef6d0fc1e0d09a8419f8bdb
+PODFILE CHECKSUM: 8d93206a4832a4cd1e98a9f886fa895166a72c71
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

@@ -8,6 +8,12 @@
 
 #import "ECCameraPreviewView.h"
 
+@interface ECCameraPreviewView ()
+
+@property (nonatomic, strong) UIImageView *imgView;
+
+@end
+
 @implementation ECCameraPreviewView
 
 

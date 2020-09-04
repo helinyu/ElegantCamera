@@ -67,7 +67,7 @@ static CGFloat const kDefaultPreviewRatio = (4.f/3);
         }];
         _cameraPreviewWidth = previewWidth;
         _cameraPreviewHeight = previewHeight;
-        _cameraPreviewView.backgroundColor = [UIColor redColor];
+//        _cameraPreviewView.backgroundColor = [UIColor redColor];
     }
     
     {
