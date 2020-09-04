@@ -26,6 +26,7 @@
 
 @property (nonatomic, strong) ECMainView *view;
 
+
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *curPreviewLayer;
 @property (nonatomic, strong) UIImageView *previewImgView;
 
