@@ -31,6 +31,7 @@ typedef NS_ENUM(NSUInteger, ECMainPhotoType) {
 
 @property (nonatomic, strong, readonly) LGButton *saveBtn;
 @property (nonatomic, strong, readonly) LGButton *editorBtn;
+@property (nonatomic, strong, readonly) LGButton *albumBtn;
 
 - (void)changeToCurIndex;
 

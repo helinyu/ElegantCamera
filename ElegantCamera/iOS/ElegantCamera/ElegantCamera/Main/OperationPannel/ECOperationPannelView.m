@@ -64,6 +64,7 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
 //save photo
 @property (nonatomic, strong) LGButton *saveBtn;
 @property (nonatomic, strong) LGButton *editorBtn;
+@property (nonatomic, strong) LGButton *albumBtn;
 
 // has taken photo
 @property (nonatomic, strong) ECIconDescControl *backCtrl; // 返回
@@ -109,6 +110,7 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
         }];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
+        _collectionView.hidden = YES;
     }
     
     {
@@ -197,7 +199,7 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
         [self addSubview:editorBtn];
         _editorBtn = editorBtn;
         [editorBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(self).multipliedBy(1.f/2.f);
+            make.centerX.equalTo(self).multipliedBy(1.f/4.f);
             make.width.height.mas_equalTo(KMWidth(kCtrlWidth));
             make.top.equalTo(self.collectionView.mas_bottom).offset(KMWidth(kCtrlTopMargin));
         }];
@@ -217,9 +219,21 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
             make.top.equalTo(self.collectionView.mas_bottom).offset(KMWidth(kCtrlTopMargin));
         }];
         [saveBtn setImage:[UIImage imageNamed:@"icon_save30"] forState:UIControlStateNormal];
-        [saveBtn addTarget:self action:@selector(onCtrlAction:) forControlEvents:UIControlEventTouchUpInside];
+//        [saveBtn addTarget:self action:@selector(onCtrlAction:) forControlEvents:UIControlEventTouchUpInside];
         saveBtn.tag = ECMainPhotoTypeSavePhoto;
         saveBtn.hidden = YES;
+    }
+    
+    {
+        LGButton *albumBtn = [LGButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:albumBtn];
+        _albumBtn = albumBtn;
+        [albumBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.editorBtn.mas_right).offset(KMWidth(5.f));
+            make.width.height.mas_equalTo(KMWidth(kCtrlWidth));
+            make.top.equalTo(self.collectionView.mas_bottom).offset(KMWidth(kCtrlTopMargin));
+        }];
+        [albumBtn setImage:[UIImage imageNamed:@"icon_album30"] forState:UIControlStateNormal];
     }
     
     

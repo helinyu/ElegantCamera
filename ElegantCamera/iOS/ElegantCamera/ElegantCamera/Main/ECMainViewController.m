@@ -70,6 +70,7 @@ EC_DYNAMIC_VIEW(ECMainView);
     [self.view.closeBtn addTarget:self action:@selector(onCloseAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view.operationPannelView.saveBtn addTarget:self action:@selector(onSaveAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view.operationPannelView.editorBtn addTarget:self action:@selector(onEditorAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view.operationPannelView.albumBtn addTarget:self action:@selector(onAlbumAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)initText {
@@ -79,6 +80,7 @@ EC_DYNAMIC_VIEW(ECMainView);
 - (void)onCloseAction:(id)sender {
     [[ECTakenManger single] restartSession];
     self.view.closeBtn.hidden = YES;
+    [self.view.cameraPreviewView sendSubviewToBack:self.previewImgView];
 }
 
 - (void)onSaveAction:(id)sender {
@@ -97,16 +99,32 @@ EC_DYNAMIC_VIEW(ECMainView);
 }
 
 - (void)onEditorAction:(id)sender {
-//    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:9 delegate:self];
-//    [imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
-//
-//    }];
-//    [self presentViewController:imagePickerVc animated:YES completion:nil];
-    
     CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:self.takenImg];
     editor.delegate = self;
     
     [self presentViewController:editor animated:YES completion:nil];
+}
+
+- (void)onAlbumAction:(id)sender {
+    TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithMaxImagesCount:9 delegate:self];
+    imagePickerVc.maxImagesCount = 1;
+    imagePickerVc.allowPickingOriginalPhoto = YES;
+    imagePickerVc.allowPickingImage = YES;
+    imagePickerVc.allowCrop = YES;
+    imagePickerVc.allowTakePicture = YES;
+    imagePickerVc.allowCameraLocation = YES;
+    imagePickerVc.allowPreview = YES;
+    imagePickerVc.allowTakeVideo = NO;
+    imagePickerVc.allowPickingVideo= NO;
+    imagePickerVc.allowPickingGif = NO;
+    W_S;
+    [imagePickerVc setDidFinishPickingPhotosHandle:^(NSArray<UIImage *> *photos, NSArray *assets, BOOL isSelectOriginalPhoto) {
+        if (photos.count <=0) return;
+        
+        weakSelf.takenImg = photos.firstObject;
+        [weakSelf showPreImgView];
+    }];
+    [self presentViewController:imagePickerVc animated:YES completion:nil];
 }
 
 - (void)rescoverPreTakenENV {
@@ -130,6 +148,7 @@ EC_DYNAMIC_VIEW(ECMainView);
     }];
     self.previewImgView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view.cameraPreviewView sendSubviewToBack:self.previewImgView];
+    self.previewImgView.backgroundColor = [UIColor grayColor];
 }
 
 #pragma mark -- ECMediaTakenViewProtocol
