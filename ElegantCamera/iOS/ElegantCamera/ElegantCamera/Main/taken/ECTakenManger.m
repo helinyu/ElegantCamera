@@ -101,6 +101,13 @@
     return nil;
 }
 
+- (void)restartSession {
+    [self.captureSession startRunning];
+}
+- (void)stopSession {
+    [self.captureSession stopRunning];
+}
+
 @end
 
 @implementation ECTakenManger (authorization)
@@ -141,10 +148,14 @@
          }
          NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:sampleBuffer];
          UIImage *image = [[UIImage alloc]initWithData:imageData];
+         [self stopSession];
          !then? :then(image, error);
      };
      [_imageOutput captureStillImageAsynchronouslyFromConnection:connection completionHandler:takePictureSuccess];
-    [_captureSession stopRunning];
+//    [imageOutput prepareToCaptureStillImageBracketFromConnection:connection withSettingsArray:nil completionHandler:^(BOOL prepared, NSError * _Nullable error) {
+//        NSLog(@"lt - prepare :%d , error :%@",prepared, error);
+//    }];
+//    [_captureSession stopRunning];
 }
 
 @end

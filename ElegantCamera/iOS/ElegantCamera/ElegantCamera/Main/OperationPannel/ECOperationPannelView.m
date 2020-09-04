@@ -230,6 +230,8 @@ static CGFloat const kCtrlDescCenterYMargin = 10.f;
     self.beautyCtrl.hidden = YES;
     self.stickerCtrl.hidden = YES;
     self.editorPhotoCtrl.hidden = YES;
+    self.backCtrl.hidden = YES;
+    self.shareCtrl.hidden = YES;
     
 }
 

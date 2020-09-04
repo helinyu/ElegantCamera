@@ -85,6 +85,20 @@ static CGFloat const kDefaultPreviewRatio = (4.f/3);
         }
         _cameraSettingsView.cameraSettingsDelegate = (id)vc;
     }
+    
+    {
+        _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self addSubview:_closeBtn];
+        [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.equalTo(self).offset(KMWidth(15.f));
+            make.width.height.mas_equalTo(KMWidth(28.f));
+        }];
+        _closeBtn.layer.cornerRadius = KMWidth(14.f);
+        _closeBtn.layer.masksToBounds = YES;
+        _closeBtn.backgroundColor = [UIColor grayColor];
+        [_closeBtn setImage:[UIImage imageNamed:@"icon_close28"] forState:UIControlStateNormal];
+        self.closeBtn.hidden = YES;
+    }
 }
 
 @end

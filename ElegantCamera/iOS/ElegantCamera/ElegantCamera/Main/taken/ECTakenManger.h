@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)toggleCemera;
 
+- (void)restartSession;
+- (void)stopSession;
+
 @end
 
 // 权限问题

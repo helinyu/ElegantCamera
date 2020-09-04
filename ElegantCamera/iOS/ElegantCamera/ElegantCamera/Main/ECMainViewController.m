@@ -16,7 +16,7 @@
 #import "ECOperationPannelView.h"
 #import "ECCameraSettingsMoreView.h"
 #import "ECSettingsViewController.h"
-
+#import <WSProgressHUD/WSProgressHUD.h>
 #import "ECTakenManger.h"
 #import "LGButton.h"
 #import "DDLog+LOGV.h"
@@ -26,6 +26,8 @@
 @property (nonatomic, strong) ECMainView *view;
 
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *curPreviewLayer;
+
+@property (nonatomic, strong) UIImage *takenImg;
 
 @end
 
@@ -42,7 +44,6 @@ EC_DYNAMIC_VIEW(ECMainView);
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.hidden = YES;
-    
 }
 
 - (void)initPre {
@@ -64,10 +65,38 @@ EC_DYNAMIC_VIEW(ECMainView);
 - (void)initBind {
     self.view.operationPannelView.pannelDelegate = self;
     
+    [self.view.closeBtn addTarget:self action:@selector(onCloseAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view.operationPannelView.saveBtn addTarget:self action:@selector(onSaveAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)initText {
     
+}
+
+- (void)onCloseAction:(id)sender {
+    [[ECTakenManger single] restartSession];
+    self.view.closeBtn.hidden = YES;
+}
+
+- (void)onSaveAction:(id)sender {
+    if (!self.takenImg) {
+        NSLog(@"lt - 没有图片可以保存");
+        return;
+    }
+    [[TZImageManager manager] savePhotoWithImage:self.takenImg completion:^(PHAsset *asset, NSError *error) {
+        if (error) {
+            NSLog(@"lt - 保存失败");
+            return;
+        }
+        [self rescoverPreTakenENV];
+        NSLog(@"lt - 保存成功");
+    }];
+}
+
+- (void)rescoverPreTakenENV {
+    self.view.closeBtn.hidden = YES;
+    self.view.operationPannelView.saveBtn.hidden = YES;
+    [[ECTakenManger single] restartSession];
 }
 
 - (void)configViewAndVariables {
@@ -126,12 +155,16 @@ EC_DYNAMIC_VIEW(ECMainView);
 
 - (void)takePhoto {
     [[ECTakenManger single] takePhoto:^(UIImage *img, NSError *error) {
-        NSLog(@"lt- take photo :%@",error);
         if (error != nil) {
-            ;
+//            [WSProgressHUD showWithStatus:@"拍照失败" maskType:WSProgressHUDMaskTypeClear maskWithout:WSProgressHUDMaskWithoutDefault];
             return;
         }
-
+        
+        self.takenImg = img;
+        self.view.operationPannelView.saveBtn.hidden = NO;
+        [self.view.operationPannelView bringSubviewToFront:self.view.operationPannelView.saveBtn];
+        self.view.closeBtn.hidden = NO;
+        [self.view bringSubviewToFront:self.view.closeBtn];
     }];
 }
 
