@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -254,7 +254,6 @@
 				F9C7A6374614BBAADFCD29A3 /* Pods-ElegantCameraUITests.debug.xcconfig */,
 				3FF53BFC4C85A8BBCF83EDCF /* Pods-ElegantCameraUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -1130,7 +1129,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.helinyu.music.ElegantCameraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElegantCamera.app/ElegantCamera";
 			};
 			name = Debug;
 		};
@@ -1151,7 +1149,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.helinyu.music.ElegantCameraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElegantCamera.app/ElegantCamera";
 			};
 			name = Release;
 		};
