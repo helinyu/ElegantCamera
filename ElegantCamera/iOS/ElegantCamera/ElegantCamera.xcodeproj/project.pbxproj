@@ -1118,7 +1118,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = H9F6F9M7N5;
 				INFOPLIST_FILE = ElegantCameraTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1138,7 +1138,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = H9F6F9M7N5;
 				INFOPLIST_FILE = ElegantCameraTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1157,7 +1157,7 @@
 			baseConfigurationReference = F9C7A6374614BBAADFCD29A3 /* Pods-ElegantCameraUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = H9F6F9M7N5;
 				INFOPLIST_FILE = ElegantCameraUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1176,7 +1176,7 @@
 			baseConfigurationReference = 3FF53BFC4C85A8BBCF83EDCF /* Pods-ElegantCameraUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2XBEJ6876;
+				DEVELOPMENT_TEAM = H9F6F9M7N5;
 				INFOPLIST_FILE = ElegantCameraUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
