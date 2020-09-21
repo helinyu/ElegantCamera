@@ -55,16 +55,15 @@
 		41E1742C236AF66C00E6AA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E1742B236AF66C00E6AA36 /* Assets.xcassets */; };
 		41E1742F236AF66C00E6AA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E1742D236AF66C00E6AA36 /* LaunchScreen.storyboard */; };
 		41E1743C236AF66C00E6AA36 /* ElegantCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E1743B236AF66C00E6AA36 /* ElegantCameraTests.m */; };
-		41E17447236AF66C00E6AA36 /* ElegantCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17446236AF66C00E6AA36 /* ElegantCameraUITests.m */; };
 		41E17459236BC71A00E6AA36 /* ECBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E17458236BC71A00E6AA36 /* ECBaseViewController.m */; };
 		41E96AAD237ADFCD004DD031 /* ECBaseTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E96AAC237ADFCD004DD031 /* ECBaseTCell.m */; };
+		41F1755525188CC20051DBF2 /* ElegantCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F1755425188CC20051DBF2 /* ElegantCameraUITests.m */; };
 		4AD347932502800100D7843C /* ECPreviewRatioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD347912502800100D7843C /* ECPreviewRatioView.m */; };
 		4AD347962502805700D7843C /* ECSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD347952502805700D7843C /* ECSettingsModel.m */; };
 		4AD347982502816400D7843C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD347972502816300D7843C /* main.m */; };
 		4AD3479E2502855E00D7843C /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD3479C2502855D00D7843C /* UIView+YYAdd.m */; };
 		4AD347A2250285B300D7843C /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD347A0250285B200D7843C /* NSObject+YYAdd.m */; };
 		CE232E2523CD360E4639F152 /* Pods_ElegantCameraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D9E6F7B6A619955C82B8F5 /* Pods_ElegantCameraTests.framework */; };
-		EF50E7F95CCDBAAF6B5E363F /* Pods_ElegantCameraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E760D4A0CD00E2D0103EDB /* Pods_ElegantCameraUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +74,7 @@
 			remoteGlobalIDString = 41E1741B236AF66900E6AA36;
 			remoteInfo = ElegantCamera;
 		};
-		41E17443236AF66C00E6AA36 /* PBXContainerItemProxy */ = {
+		41F1755725188CC20051DBF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 41E17414236AF66900E6AA36 /* Project object */;
 			proxyType = 1;
@@ -188,14 +187,14 @@
 		41E17437236AF66C00E6AA36 /* ElegantCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElegantCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E1743B236AF66C00E6AA36 /* ElegantCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElegantCameraTests.m; sourceTree = "<group>"; };
 		41E1743D236AF66C00E6AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41E17442236AF66C00E6AA36 /* ElegantCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElegantCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41E17446236AF66C00E6AA36 /* ElegantCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElegantCameraUITests.m; sourceTree = "<group>"; };
-		41E17448236AF66C00E6AA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E17454236AF69200E6AA36 /* ElegantCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElegantCamera.entitlements; sourceTree = "<group>"; };
 		41E17457236BC71A00E6AA36 /* ECBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseViewController.h; sourceTree = "<group>"; };
 		41E17458236BC71A00E6AA36 /* ECBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseViewController.m; sourceTree = "<group>"; };
 		41E96AAB237ADFCD004DD031 /* ECBaseTCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseTCell.h; sourceTree = "<group>"; };
 		41E96AAC237ADFCD004DD031 /* ECBaseTCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseTCell.m; sourceTree = "<group>"; };
+		41F1755225188CC20051DBF2 /* ElegantCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElegantCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F1755425188CC20051DBF2 /* ElegantCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElegantCameraUITests.m; sourceTree = "<group>"; };
+		41F1755625188CC20051DBF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4961518C7713CD384FB847E7 /* Pods_ElegantCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD347912502800100D7843C /* ECPreviewRatioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPreviewRatioView.m; sourceTree = "<group>"; };
 		4AD347922502800100D7843C /* ECPreviewRatioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPreviewRatioView.h; sourceTree = "<group>"; };
@@ -233,11 +232,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41E1743F236AF66C00E6AA36 /* Frameworks */ = {
+		41F1754F25188CC20051DBF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF50E7F95CCDBAAF6B5E363F /* Pods_ElegantCameraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +512,7 @@
 			children = (
 				41E1741E236AF66900E6AA36 /* ElegantCamera */,
 				41E1743A236AF66C00E6AA36 /* ElegantCameraTests */,
-				41E17445236AF66C00E6AA36 /* ElegantCameraUITests */,
+				41F1755325188CC20051DBF2 /* ElegantCameraUITests */,
 				41E1741D236AF66900E6AA36 /* Products */,
 				1504EAB83EB59904E222D1F5 /* Pods */,
 				5CA0D061684D67CE3B2C7CB5 /* Frameworks */,
@@ -526,7 +524,7 @@
 			children = (
 				41E1741C236AF66900E6AA36 /* 玩拍.app */,
 				41E17437236AF66C00E6AA36 /* ElegantCameraTests.xctest */,
-				41E17442236AF66C00E6AA36 /* ElegantCameraUITests.xctest */,
+				41F1755225188CC20051DBF2 /* ElegantCameraUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -564,15 +562,6 @@
 			path = ElegantCameraTests;
 			sourceTree = "<group>";
 		};
-		41E17445236AF66C00E6AA36 /* ElegantCameraUITests */ = {
-			isa = PBXGroup;
-			children = (
-				41E17446236AF66C00E6AA36 /* ElegantCameraUITests.m */,
-				41E17448236AF66C00E6AA36 /* Info.plist */,
-			);
-			path = ElegantCameraUITests;
-			sourceTree = "<group>";
-		};
 		41E1745A236BC71F00E6AA36 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +596,15 @@
 				4172EC2A25026BEA002012AF /* taken */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		41F1755325188CC20051DBF2 /* ElegantCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41F1755425188CC20051DBF2 /* ElegantCameraUITests.m */,
+				41F1755625188CC20051DBF2 /* Info.plist */,
+			);
+			path = ElegantCameraUITests;
 			sourceTree = "<group>";
 		};
 		5CA0D061684D67CE3B2C7CB5 /* Frameworks */ = {
@@ -660,23 +658,22 @@
 			productReference = 41E17437236AF66C00E6AA36 /* ElegantCameraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		41E17441236AF66C00E6AA36 /* ElegantCameraUITests */ = {
+		41F1755125188CC20051DBF2 /* ElegantCameraUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41E17451236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCameraUITests" */;
+			buildConfigurationList = 41F1755925188CC20051DBF2 /* Build configuration list for PBXNativeTarget "ElegantCameraUITests" */;
 			buildPhases = (
-				BC191D8C81B0645E194F09AA /* [CP] Check Pods Manifest.lock */,
-				41E1743E236AF66C00E6AA36 /* Sources */,
-				41E1743F236AF66C00E6AA36 /* Frameworks */,
-				41E17440236AF66C00E6AA36 /* Resources */,
+				41F1754E25188CC20051DBF2 /* Sources */,
+				41F1754F25188CC20051DBF2 /* Frameworks */,
+				41F1755025188CC20051DBF2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				41E17444236AF66C00E6AA36 /* PBXTargetDependency */,
+				41F1755825188CC20051DBF2 /* PBXTargetDependency */,
 			);
 			name = ElegantCameraUITests;
 			productName = ElegantCameraUITests;
-			productReference = 41E17442236AF66C00E6AA36 /* ElegantCameraUITests.xctest */;
+			productReference = 41F1755225188CC20051DBF2 /* ElegantCameraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -695,8 +692,8 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = 41E1741B236AF66900E6AA36;
 					};
-					41E17441236AF66C00E6AA36 = {
-						CreatedOnToolsVersion = 11.1;
+					41F1755125188CC20051DBF2 = {
+						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 41E1741B236AF66900E6AA36;
 					};
 				};
@@ -733,7 +730,7 @@
 			targets = (
 				41E1741B236AF66900E6AA36 /* ElegantCamera */,
 				41E17436236AF66C00E6AA36 /* ElegantCameraTests */,
-				41E17441236AF66C00E6AA36 /* ElegantCameraUITests */,
+				41F1755125188CC20051DBF2 /* ElegantCameraUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -755,7 +752,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41E17440236AF66C00E6AA36 /* Resources */ = {
+		41F1755025188CC20051DBF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -824,28 +821,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElegantCamera/Pods-ElegantCamera-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC191D8C81B0645E194F09AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ElegantCameraUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -917,11 +892,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41E1743E236AF66C00E6AA36 /* Sources */ = {
+		41F1754E25188CC20051DBF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E17447236AF66C00E6AA36 /* ElegantCameraUITests.m in Sources */,
+				41F1755525188CC20051DBF2 /* ElegantCameraUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,10 +908,10 @@
 			target = 41E1741B236AF66900E6AA36 /* ElegantCamera */;
 			targetProxy = 41E17438236AF66C00E6AA36 /* PBXContainerItemProxy */;
 		};
-		41E17444236AF66C00E6AA36 /* PBXTargetDependency */ = {
+		41F1755825188CC20051DBF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41E1741B236AF66900E6AA36 /* ElegantCamera */;
-			targetProxy = 41E17443236AF66C00E6AA36 /* PBXContainerItemProxy */;
+			targetProxy = 41F1755725188CC20051DBF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1152,38 +1127,40 @@
 			};
 			name = Release;
 		};
-		41E17452236AF66C00E6AA36 /* Debug */ = {
+		41F1755A25188CC20051DBF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9C7A6374614BBAADFCD29A3 /* Pods-ElegantCameraUITests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9F6F9M7N5;
 				INFOPLIST_FILE = ElegantCameraUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.helinyu.music.ElegantCameraUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comic.ismh.ElegantCameraUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ElegantCamera;
 			};
 			name = Debug;
 		};
-		41E17453236AF66C00E6AA36 /* Release */ = {
+		41F1755B25188CC20051DBF2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FF53BFC4C85A8BBCF83EDCF /* Pods-ElegantCameraUITests.release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9F6F9M7N5;
 				INFOPLIST_FILE = ElegantCameraUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.helinyu.music.ElegantCameraUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comic.ismh.ElegantCameraUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ElegantCamera;
@@ -1220,11 +1197,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41E17451236AF66C00E6AA36 /* Build configuration list for PBXNativeTarget "ElegantCameraUITests" */ = {
+		41F1755925188CC20051DBF2 /* Build configuration list for PBXNativeTarget "ElegantCameraUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41E17452236AF66C00E6AA36 /* Debug */,
-				41E17453236AF66C00E6AA36 /* Release */,
+				41F1755A25188CC20051DBF2 /* Debug */,
+				41F1755B25188CC20051DBF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
