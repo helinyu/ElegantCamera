@@ -1,0 +1,6 @@
+framework module Pods_ElegantCameraUITests {
+  umbrella header "Pods-ElegantCameraUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
